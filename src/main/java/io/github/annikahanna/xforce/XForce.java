@@ -19,12 +19,12 @@ public class XForce {
         BlockInit.BLOCKS.register(bus);
     }
 
-    /*public static final CreativeModeTab TAB = new CreativeModeTab(MODID ) {
+    public static final CreativeModeTab TAB = new CreativeModeTab(MODID ) {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return ItemInit.EXAMPLE_ITEM.get().getDefaultInstance();
+            return ItemInit.DOGTREAT.get().getDefaultInstance();
         }
 
 
-    };*/
+    };
 }
