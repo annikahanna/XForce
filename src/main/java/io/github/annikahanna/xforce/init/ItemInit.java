@@ -21,20 +21,27 @@ public class ItemInit {
     public static final RegistryObject<Item> ALKOHOL = ITEMS.register("schnaps", () -> new Item(
             new Item.Properties().tab(XForce.TAB).food(Foods.ALCOHOL)));
 
+   /* public static final RegistryObject<Item> HERB = ITEMS.register("herb", () -> new Item(
+            new Item.Properties().tab(XForce.TAB).food(Foods.HERB)));*/
+
     public static class Foods{
         public static final FoodProperties DOGTREAT =
                 new FoodProperties.Builder()
                         .nutrition(1)
                         .meat()
-                        .effect(() -> new MobEffectInstance(MobEffects.POISON, 100, 1), 0.5f)
+                        .effect(() -> new MobEffectInstance(MobEffects.POISON, 30, 1), 0.5f)
                         .build();
 
 
     public static final FoodProperties ALCOHOL =
             new FoodProperties.Builder()
-                    .nutrition(1)
-                    .meat()
+                    .nutrition(6)
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 3), 1)
                     .build();
+
+        public static final FoodProperties HERB =
+                new FoodProperties.Builder()
+                        .nutrition(1)
+                        .build();
 }
 }
