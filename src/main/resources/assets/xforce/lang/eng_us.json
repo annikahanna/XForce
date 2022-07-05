@@ -1,5 +1,10 @@
 {
   "item.xforce.dogtreat": "Dogtreat",
   "item.xforce.schnaps": "Schnaps",
-  "block.xforce.herb": "Herb"
+  "block.xforce.herb": "Herb",
+  "item.xforce.copper_sword": "Copper Sword",
+  "item.xforce.copper_pickaxe": "Copper Pickaxe",
+  "item.xforce.copper_axe": "Copper Axe",
+  "item.xforce.copper_shovel": "Copper Shovel",
+  "item.xforce.copper_hoe": "Copper Hoe"
 }

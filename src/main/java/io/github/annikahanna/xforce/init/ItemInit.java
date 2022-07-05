@@ -4,7 +4,9 @@ import io.github.annikahanna.xforce.XForce;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -15,14 +17,30 @@ public class ItemInit {
    /* public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item", ()->new Item(
             new Item.Properties().tab(XForce.TAB)));*/
 
+   //Foods
     public static final RegistryObject<Item> DOGTREAT = ITEMS.register("dogtreat", () -> new Item(
-            new Item.Properties().tab(XForce.TAB).food(Foods.DOGTREAT)));
+            props().food(Foods.DOGTREAT)));
 
     public static final RegistryObject<Item> ALKOHOL = ITEMS.register("schnaps", () -> new Item(
-            new Item.Properties().tab(XForce.TAB).food(Foods.ALCOHOL)));
+            props().food(Foods.ALCOHOL)));
 
-   /* public static final RegistryObject<Item> HERB = ITEMS.register("herb", () -> new Item(
-            new Item.Properties().tab(XForce.TAB).food(Foods.HERB)));*/
+    //Tools
+
+   public static final RegistryObject<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword",
+           () -> new SwordItem(Tiers.COPPER, 5,3.5f, props()));
+   public static final RegistryObject<PickaxeItem> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
+           () -> new PickaxeItem(Tiers.COPPER,5,3.5f, props()));
+    public static final RegistryObject<ShovelItem> COPPER_SHOVEL = ITEMS.register("copper_shovel",
+            () -> new ShovelItem(Tiers.COPPER,5,3.5f, props()));
+    public static final RegistryObject<AxeItem> COPPER_AXE = ITEMS.register("copper_axe",
+            () -> new AxeItem(Tiers.COPPER,5,3.5f, props()));
+    public static final RegistryObject<HoeItem> COPPER_HOE = ITEMS.register("copper_hoe",
+            () -> new HoeItem(Tiers.COPPER,5,3.5f, props()));
+
+
+   private static Item.Properties props(){
+       return new Item.Properties().tab(XForce.TAB);
+   }
 
     public static class Foods{
         public static final FoodProperties DOGTREAT =
@@ -43,5 +61,17 @@ public class ItemInit {
                 new FoodProperties.Builder()
                         .nutrition(1)
                         .build();
-}
+
+   }
+
+   public static class Tiers {
+       public static final Tier COPPER = new ForgeTier(
+               2,
+               10,
+               1.5f,
+               3,
+               350,
+               null,
+               () -> Ingredient.of(Items.COPPER_ORE));
+   }
 }
