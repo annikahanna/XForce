@@ -17,6 +17,15 @@ public final class ArmorMaterialInit {
             SoundEvents.COPPER_HIT,
             () -> Ingredient.of(Items.COPPER_INGOT));
 
+    public static final ArmorMaterial HEADLAMP = new BaseArmorMaterial(100,
+            new int[] { 5000, 5000, 5000, 5000 },
+            new int[]{0, 0, 0, 0},
+            0.0f,
+            0.0f,
+            XForce.MODID + ":headlamp",
+            SoundEvents.WOOL_PLACE,
+            () -> Ingredient.EMPTY);
+
     private ArmorMaterialInit() {
     }
 }

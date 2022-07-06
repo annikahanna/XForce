@@ -1,6 +1,7 @@
 package io.github.annikahanna.xforce.init;
 
 import io.github.annikahanna.xforce.XForce;
+import io.github.annikahanna.xforce.init.custom.HeadLampEffect;
 import io.github.annikahanna.xforce.init.custom.ModArmorItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -48,6 +49,8 @@ public class ItemInit {
             () -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.LEGS, props()));
     public static final RegistryObject<ArmorItem> COPPER_BOOTS = ITEMS.register("copper_boots",
             () -> new ModArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.FEET, props()));
+    public static final RegistryObject<ArmorItem> HEADLAMP = ITEMS.register("headlamp",
+            () -> new HeadLampEffect(ArmorMaterialInit.HEADLAMP, EquipmentSlot.HEAD, props()));
 
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);

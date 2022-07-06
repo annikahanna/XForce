@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "#BC",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:beef"
+    },
+    "B": {
+      "item": "minecraft:beetroot"
+    },
+    "C": {
+      "item": "minecraft:carrot"
+    }
+  },
+  "result": {
+    "item": "xforce:dogtreat",
+    "count": 1
+  }
+}

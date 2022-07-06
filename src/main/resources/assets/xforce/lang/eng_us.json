@@ -6,5 +6,10 @@
   "item.xforce.copper_pickaxe": "Copper Pickaxe",
   "item.xforce.copper_axe": "Copper Axe",
   "item.xforce.copper_shovel": "Copper Shovel",
-  "item.xforce.copper_hoe": "Copper Hoe"
+  "item.xforce.copper_hoe": "Copper Hoe",
+  "item.xforce.copper_helmet": "Copper Helmet",
+  "item.xforce.copper_chestplate": "Copper Chestplate",
+  "item.xforce.copper_leggins": "Copper Leggins",
+  "item.xforce.copper_boots": "Copper Boots",
+  "item.xforce.headlamp": "Headlamp"
 }
