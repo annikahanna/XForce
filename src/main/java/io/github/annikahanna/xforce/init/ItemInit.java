@@ -1,8 +1,10 @@
 package io.github.annikahanna.xforce.init;
 
 import io.github.annikahanna.xforce.XForce;
+import io.github.annikahanna.xforce.init.custom.ModArmorItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -37,6 +39,15 @@ public class ItemInit {
     public static final RegistryObject<HoeItem> COPPER_HOE = ITEMS.register("copper_hoe",
             () -> new HoeItem(Tiers.COPPER,5,3.5f, props()));
 
+//ARMOR
+    public static final RegistryObject<ArmorItem> COPPER_HELMET = ITEMS.register("copper_helmet",
+        () -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> COPPER_CHESTPLATE = ITEMS.register("copper_chestplate",
+            () -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> COPPER_LEGGINS = ITEMS.register("copper_leggins",
+            () -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> COPPER_BOOTS = ITEMS.register("copper_boots",
+            () -> new ModArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.FEET, props()));
 
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);
@@ -72,6 +83,6 @@ public class ItemInit {
                3,
                350,
                null,
-               () -> Ingredient.of(Items.COPPER_ORE));
+               () -> Ingredient.of(Items.COPPER_INGOT));
    }
 }
