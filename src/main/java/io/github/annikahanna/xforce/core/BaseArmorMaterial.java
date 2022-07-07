@@ -1,4 +1,4 @@
-package io.github.annikahanna.xforce;
+package io.github.annikahanna.xforce.core;
 
 import java.util.function.Supplier;
 

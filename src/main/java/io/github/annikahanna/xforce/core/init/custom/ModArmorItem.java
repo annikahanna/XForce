@@ -1,7 +1,7 @@
-package io.github.annikahanna.xforce.init.custom;
+package io.github.annikahanna.xforce.core.init.custom;
 
 import com.google.common.collect.ImmutableMap;
-import io.github.annikahanna.xforce.init.ArmorMaterialInit;
+import io.github.annikahanna.xforce.core.init.ArmorMaterialInit;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;

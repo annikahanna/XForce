@@ -1,6 +1,6 @@
-package io.github.annikahanna.xforce.init;
+package io.github.annikahanna.xforce.core.init;
 
-import io.github.annikahanna.xforce.BaseArmorMaterial;
+import io.github.annikahanna.xforce.core.BaseArmorMaterial;
 import io.github.annikahanna.xforce.XForce;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorMaterial;

@@ -1,4 +1,4 @@
-package io.github.annikahanna.xforce.init;
+package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
 import net.minecraft.world.effect.MobEffects;
@@ -13,7 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static io.github.annikahanna.xforce.init.ItemInit.ITEMS;
+import static io.github.annikahanna.xforce.core.init.ItemInit.ITEMS;
 
 import java.util.function.Supplier;
 

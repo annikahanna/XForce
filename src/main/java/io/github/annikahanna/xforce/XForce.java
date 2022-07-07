@@ -1,7 +1,8 @@
 package io.github.annikahanna.xforce;
 
-import io.github.annikahanna.xforce.init.BlockInit;
-import io.github.annikahanna.xforce.init.ItemInit;
+import io.github.annikahanna.xforce.core.init.BlockInit;
+import io.github.annikahanna.xforce.core.init.EntityInit;
+import io.github.annikahanna.xforce.core.init.ItemInit;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,6 +18,7 @@ public class XForce {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
+        EntityInit.ENTITIES.register(bus);
     }
 
     public static final CreativeModeTab TAB = new CreativeModeTab(MODID ) {

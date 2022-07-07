@@ -13,5 +13,6 @@
   "item.xforce.copper_chestplate": "Copper Chestplate",
   "item.xforce.copper_leggins": "Copper Leggins",
   "item.xforce.copper_boots": "Copper Boots",
-  "item.xforce.headlamp": "Headlamp"
+  "item.xforce.headlamp": "Headlamp",
+  "entity.xforce.pixel": "Pixel"
 }

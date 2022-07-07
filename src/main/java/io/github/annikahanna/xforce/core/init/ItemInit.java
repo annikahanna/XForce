@@ -1,8 +1,8 @@
-package io.github.annikahanna.xforce.init;
+package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
-import io.github.annikahanna.xforce.init.custom.HeadLampEffect;
-import io.github.annikahanna.xforce.init.custom.ModArmorItem;
+import io.github.annikahanna.xforce.core.init.custom.HeadLampEffect;
+import io.github.annikahanna.xforce.core.init.custom.ModArmorItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
