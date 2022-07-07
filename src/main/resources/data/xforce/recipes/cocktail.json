@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "#WX",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:sweet_berries"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    },
+    "X": {
+      "item": "xforce:schnaps"
+    }
+  },
+  "result": {
+    "item": "xforce:cocktail",
+    "count": 1
+  }
+}

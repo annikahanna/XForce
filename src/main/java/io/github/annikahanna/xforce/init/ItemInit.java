@@ -27,6 +27,12 @@ public class ItemInit {
     public static final RegistryObject<Item> ALKOHOL = ITEMS.register("schnaps", () -> new Item(
             props().food(Foods.ALCOHOL)));
 
+    public static final RegistryObject<Item> BEER = ITEMS.register("beer", () -> new Item(
+            props().food(Foods.BEER)));
+
+    public static final RegistryObject<Item> COCKTAIL = ITEMS.register("cocktail", () -> new Item(
+            props().food(Foods.COCKTAIL)));
+
     //Tools
 
    public static final RegistryObject<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword",
@@ -71,9 +77,16 @@ public class ItemInit {
                     .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 1200, 3), 1)
                     .build();
 
-        public static final FoodProperties HERB =
+        public static final FoodProperties BEER =
                 new FoodProperties.Builder()
-                        .nutrition(1)
+                        .nutrition(4)
+                        .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 100, 0), 1)
+                        .build();
+
+        public static final FoodProperties COCKTAIL =
+                new FoodProperties.Builder()
+                        .nutrition(2)
+                        .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 1), 1)
                         .build();
 
    }
