@@ -14,5 +14,8 @@
   "item.xforce.copper_leggins": "Copper Leggins",
   "item.xforce.copper_boots": "Copper Boots",
   "item.xforce.headlamp": "Headlamp",
-  "entity.xforce.pixel": "Pixel"
+  "entity.xforce.pixel": "Pixel",
+  "item.xforce.pixel_spawn_egg": "Pixel Spawn Egg",
+  "item.xforce.fantasy_girl": "Fantasy Girl",
+  "item.xforce.fantasy_girl.desc": "XXX -Fantasy Girl (CCO)"
 }

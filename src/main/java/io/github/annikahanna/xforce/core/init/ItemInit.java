@@ -3,12 +3,14 @@ package io.github.annikahanna.xforce.core.init;
 import io.github.annikahanna.xforce.XForce;
 import io.github.annikahanna.xforce.core.init.custom.HeadLampEffect;
 import io.github.annikahanna.xforce.core.init.custom.ModArmorItem;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -57,6 +59,16 @@ public class ItemInit {
             () -> new ModArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.FEET, props()));
     public static final RegistryObject<ArmorItem> HEADLAMP = ITEMS.register("headlamp",
             () -> new HeadLampEffect(ArmorMaterialInit.HEADLAMP, EquipmentSlot.HEAD, props()));
+
+//SPAWN EGGS
+
+    public static final RegistryObject<ForgeSpawnEggItem> PIXEL_SPWAN_EGG = ITEMS.register("pixel_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.PIXEL, 0x39200e, 0xffffff, props()));
+
+//MUSIC DISK
+
+    public static final RegistryObject<RecordItem> FANTASY_GIRL = ITEMS.register("fantasy_girl",
+            () -> new RecordItem(1, SoundsInit.FANTASY_GIRL, (new Item.Properties()).stacksTo(1).tab(XForce.TAB)));
 
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);

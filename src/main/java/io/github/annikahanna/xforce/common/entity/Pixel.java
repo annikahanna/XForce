@@ -33,4 +33,15 @@ public class Pixel extends Wolf {
         super(p_30369_, p_30370_);
     }
 
+    @Override
+    public Pixel getBreedOffspring(ServerLevel p_149088_, AgeableMob p_149089_) {
+        Pixel pixel = EntityInit.PIXEL.get().create(p_149088_);
+        UUID uuid = this.getOwnerUUID();
+        if (uuid != null) {
+            pixel.setOwnerUUID(uuid);
+            pixel.setTame(true);
+        }
+
+        return pixel;
+    }
 }
