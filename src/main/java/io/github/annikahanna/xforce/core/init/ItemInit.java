@@ -64,6 +64,8 @@ public class ItemInit {
 
     public static final RegistryObject<ForgeSpawnEggItem> PIXEL_SPWAN_EGG = ITEMS.register("pixel_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityInit.PIXEL, 0x39200e, 0xffffff, props()));
+    public static final RegistryObject<ForgeSpawnEggItem> CORGI_SPWAN_EGG = ITEMS.register("corgi_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.CORGI, 0x000000, 0xffffff, props()));
 
 //MUSIC DISK
 

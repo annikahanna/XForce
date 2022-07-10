@@ -1,6 +1,7 @@
 package io.github.annikahanna.xforce.core.event;
 
 import io.github.annikahanna.xforce.XForce;
+import io.github.annikahanna.xforce.common.entity.Corgi;
 import io.github.annikahanna.xforce.common.entity.Pixel;
 import io.github.annikahanna.xforce.core.init.EntityInit;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -13,5 +14,6 @@ public class CommonModEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event){
         event.put(EntityInit.PIXEL.get(), Pixel.createAttributes().build());
+        event.put(EntityInit.CORGI.get(), Corgi.createAttributes().build());
     }
 }
