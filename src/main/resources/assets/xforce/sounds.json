@@ -1,8 +1,48 @@
 {
-  "entity.fantasy_girl": {
+  "fantasy_girl": {
     "sounds": [
       {
         "name": "xforce:fantasy_girl",
+        "stream": true
+      }
+    ]
+  },
+  "cotton_eye_joe": {
+    "sounds": [
+      {
+        "name": "xforce:cotton_eye_joe",
+        "stream": true
+      }
+    ]
+  },
+  "country_girl": {
+    "sounds": [
+      {
+        "name": "xforce:country_girl",
+        "stream": true
+      }
+    ]
+  },
+  "rick_roll": {
+    "sounds": [
+      {
+        "name": "xforce:rick_roll",
+        "stream": true
+      }
+    ]
+  },
+  "shania_twain": {
+    "sounds": [
+      {
+        "name": "xforce:shania_twain",
+        "stream": true
+      }
+    ]
+  },
+  "stranger_things": {
+    "sounds": [
+      {
+        "name": "xforce:stranger_things",
         "stream": true
       }
     ]

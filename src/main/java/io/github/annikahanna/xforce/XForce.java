@@ -3,6 +3,7 @@ package io.github.annikahanna.xforce;
 import io.github.annikahanna.xforce.core.init.BlockInit;
 import io.github.annikahanna.xforce.core.init.EntityInit;
 import io.github.annikahanna.xforce.core.init.ItemInit;
+import io.github.annikahanna.xforce.core.init.ModSounds;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,7 @@ public class XForce {
         ItemInit.ITEMS.register(bus);
         BlockInit.BLOCKS.register(bus);
         EntityInit.ENTITIES.register(bus);
+        ModSounds.SOUND_EVENTS.register(bus);
     }
 
     public static final CreativeModeTab TAB = new CreativeModeTab(MODID ) {

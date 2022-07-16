@@ -19,6 +19,7 @@ public class HeadLampEffect extends ArmorItem {
                     .put(ArmorMaterialInit.HEADLAMP,
                             new MobEffectInstance(MobEffects.NIGHT_VISION, 1200, 3)).build();
 
+
     public HeadLampEffect(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
     }

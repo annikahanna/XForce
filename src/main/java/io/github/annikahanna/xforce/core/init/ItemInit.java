@@ -1,8 +1,10 @@
 package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
+import io.github.annikahanna.xforce.core.init.custom.FlowerCrownEffect;
 import io.github.annikahanna.xforce.core.init.custom.HeadLampEffect;
 import io.github.annikahanna.xforce.core.init.custom.ModArmorItem;
+import io.github.annikahanna.xforce.core.init.custom.SunflowerCrownEffect;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -59,6 +61,10 @@ public class ItemInit {
             () -> new ModArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.FEET, props()));
     public static final RegistryObject<ArmorItem> HEADLAMP = ITEMS.register("headlamp",
             () -> new HeadLampEffect(ArmorMaterialInit.HEADLAMP, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> FLOWERCROWN = ITEMS.register("flowercrown",
+            () -> new FlowerCrownEffect(ArmorMaterialInit.FLOWERCROWN, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> SUNFLOWERCROWN = ITEMS.register("sunflowercrown",
+            () -> new SunflowerCrownEffect(ArmorMaterialInit.SUNFLOWERCROWN, EquipmentSlot.HEAD, props()));
 
 //SPAWN EGGS
 
@@ -69,8 +75,25 @@ public class ItemInit {
 
 //MUSIC DISK
 
-    public static final RegistryObject<RecordItem> FANTASY_GIRL = ITEMS.register("fantasy_girl",
-            () -> new RecordItem(1, SoundsInit.FANTASY_GIRL, (new Item.Properties()).stacksTo(1).tab(XForce.TAB)));
+    public static final RegistryObject<Item> FANTASY_GIRL_MUSIC_DISC = ITEMS.register("fantasy_girl_music_disc",
+            () -> new RecordItem(4, ModSounds.FANTASY_GIRL,
+                    props().stacksTo(1)));
+    public static final RegistryObject<Item> COTTON_EYE_JOE_MUSIC_DISC = ITEMS.register("cotton_eye_joe_music_disc",
+            () -> new RecordItem(4, ModSounds.COTTON_EYE_JOE_GIRL,
+                    props().stacksTo(1)));
+    public static final RegistryObject<Item> COUNTRY_GIRL_MUSIC_DISC = ITEMS.register("country_girl_music_disc",
+            () -> new RecordItem(4, ModSounds.COUNTRY_GIRL,
+                    props().stacksTo(1)));
+    public static final RegistryObject<Item> RICK_ROLL_MUSIC_DISC = ITEMS.register("rick_roll_music_disc",
+            () -> new RecordItem(4, ModSounds.RICK_ROLL,
+                    props().stacksTo(1)));
+    public static final RegistryObject<Item> SHANIA_TWAIN_MUSIC_DISC = ITEMS.register("shania_twain_music_disc",
+            () -> new RecordItem(4, ModSounds.SHANIA_TWAIN,
+                    props().stacksTo(1)));
+    public static final RegistryObject<Item> STRANGER_THINGS_MUSIC_DISC = ITEMS.register("stranger_things_music_disc",
+            () -> new RecordItem(4, ModSounds.STRANGER_THINGS,
+                    props().stacksTo(1)));
+
 
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);

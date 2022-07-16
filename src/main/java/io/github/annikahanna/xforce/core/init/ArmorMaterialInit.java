@@ -17,13 +17,32 @@ public final class ArmorMaterialInit {
             SoundEvents.COPPER_HIT,
             () -> Ingredient.of(Items.COPPER_INGOT));
 
-    public static final ArmorMaterial HEADLAMP = new BaseArmorMaterial(100,
+    public static final ArmorMaterial HEADLAMP = new BaseArmorMaterial(0,
             new int[] { 5000, 5000, 5000, 5000 },
             new int[]{0, 0, 0, 0},
             0.0f,
             0.0f,
             XForce.MODID + ":headlamp",
             SoundEvents.WOOL_PLACE,
+            () -> Ingredient.EMPTY);
+
+
+    public static final ArmorMaterial FLOWERCROWN = new BaseArmorMaterial(0,
+            new int[] { 50, 50, 50, 50 },
+            new int[]{0, 0, 0, 0},
+            0.0f,
+            0.0f,
+            XForce.MODID + ":flowercrown",
+            SoundEvents.CHORUS_FLOWER_GROW,
+            () -> Ingredient.EMPTY);
+
+    public static final ArmorMaterial SUNFLOWERCROWN = new BaseArmorMaterial(0,
+            new int[] { 50, 50, 50, 50 },
+            new int[]{0, 0, 0, 0},
+            0.0f,
+            0.0f,
+            XForce.MODID + ":sunflowercrown",
+            SoundEvents.CHORUS_FLOWER_GROW,
             () -> Ingredient.EMPTY);
 
     private ArmorMaterialInit() {

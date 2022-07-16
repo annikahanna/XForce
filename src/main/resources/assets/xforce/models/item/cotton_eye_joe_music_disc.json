@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "xforce:items/cotton_eye_joe_music_disc"
+  }
+}
