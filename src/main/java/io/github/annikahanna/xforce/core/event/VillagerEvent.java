@@ -221,6 +221,16 @@ public class VillagerEvent {
                     stack,10,10,0.02F));
         }
 
+        if(event.getType() == VillagerInit.DJ.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.ABBA_MUSIC_DISC.get(), 1);
+            int villagerLevel = 4;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 20),
+                    stack,10,10,0.02F));
+        }
+
         if(event.getType() == VillagerInit.HOST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.BEER.get(), 1);

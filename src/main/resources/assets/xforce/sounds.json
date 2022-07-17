@@ -54,5 +54,13 @@
         "stream": true
       }
     ]
+  },
+  "abba": {
+    "sounds": [
+      {
+        "name": "xforce:abba",
+        "stream": true
+      }
+    ]
   }
 }
