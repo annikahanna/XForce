@@ -61,6 +61,19 @@ public class VillagerInit {
                             ImmutableSet.of(),
                             SoundEvents.VILLAGER_WORK_TOOLSMITH));
 
+    public static final RegistryObject<PoiType> HOST_POI = POI_TYPES.register("host_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Blocks.CRAFTING_TABLE.getStateDefinition().getPossibleStates()),
+                    1,1));
+
+    public static final RegistryObject<VillagerProfession> HOST =
+            VILLAGER_PROFESSIONS.register("host",
+                    () -> new VillagerProfession("host",
+                            x -> x.get() == HOST_POI.get(),
+                            x -> x.get() == HOST_POI.get(),
+                            ImmutableSet.of(),
+                            ImmutableSet.of(),
+                            SoundEvents.VILLAGER_WORK_TOOLSMITH));
+
     public static void registerPOIs(){
         try{
             ObfuscationReflectionHelper.findMethod(PoiType.class,

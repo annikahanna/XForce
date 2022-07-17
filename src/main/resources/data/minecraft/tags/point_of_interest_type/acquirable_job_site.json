@@ -2,6 +2,7 @@
   "values": [
     "xforce:honey_poi",
     "xforce:dog_poi",
-    "xforce:dj_poi"
+    "xforce:dj_poi",
+    "xforce:host_poi"
   ]
 }

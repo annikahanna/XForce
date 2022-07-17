@@ -39,7 +39,12 @@
   "item.xforce.shania_twain_music_disc.desc": "Shania Twain - Any Man Of Mine",
   "item.xforce.stranger_things_music_disc": "Stranger Things Music Disc",
   "item.xforce.stranger_things_music_disc.desc": "Kate Bush - Running Up That Hill",
+  "item.xforce.good_boy_music_disc": "I'm the guud boi Music Disc",
+  "item.xforce.good_boy_music_disc.desc": "Flipper - I'm the guud boi",
+
   "entity.minecraft.villager.xforce.beekeeper": "Beekeeper",
   "entity.minecraft.villager.xforce.dog_breeder": "Dog Breeder",
-  "entity.minecraft.villager.xforce.dj": "DJ"
+  "entity.minecraft.villager.xforce.dj": "DJ",
+  "entity.minecraft.villager.xforce.host": "Host"
+
 }

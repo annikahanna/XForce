@@ -173,6 +173,16 @@ public class VillagerEvent {
 
         if(event.getType() == VillagerInit.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.GOOD_BOY_MUSIC_DISC.get(), 1);
+            int villagerLevel = 2;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 5),
+                    stack,10,5,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.DJ.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.COUNTRY_GIRL_MUSIC_DISC.get(), 1);
             int villagerLevel = 2;
 
@@ -209,6 +219,56 @@ public class VillagerEvent {
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(Items.EMERALD, 20),
                     stack,10,10,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.HOST.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.BEER.get(), 1);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    stack,10,2,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.HOST.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(Items.EMERALD, 1);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.WHEAT, 10),
+                    stack,10,2,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.HOST.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(Items.EMERALD, 1);
+            int villagerLevel = 2;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.SWEET_BERRIES, 5),
+                    stack,10,5,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.HOST.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.COCKTAIL.get(), 1);
+            int villagerLevel = 2;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 3),
+                    stack,10,5,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.HOST.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.ALKOHOL.get(), 1);
+            int villagerLevel = 3;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 5),
+                    stack,10,8,0.02F));
         }
 
             //last parameters: max uses, experience, multipliere

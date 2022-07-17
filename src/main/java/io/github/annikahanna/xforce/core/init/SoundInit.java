@@ -20,6 +20,8 @@ public class SoundInit {
     public static RegistryObject<SoundEvent> SHANIA_TWAIN = registerSoundEvent("shania_twain");
     public static RegistryObject<SoundEvent> STRANGER_THINGS = registerSoundEvent("stranger_things");
 
+    public static RegistryObject<SoundEvent> GOOD_BOY = registerSoundEvent("good_boy");
+
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(XForce.MODID, name)));
     }

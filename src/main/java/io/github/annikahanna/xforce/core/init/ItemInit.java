@@ -93,6 +93,10 @@ public class ItemInit {
             () -> new RecordItem(4, SoundInit.STRANGER_THINGS,
                     props().stacksTo(1)));
 
+    public static final RegistryObject<Item> GOOD_BOY_MUSIC_DISC = ITEMS.register("good_boy_music_disc",
+            () -> new RecordItem(4, SoundInit.GOOD_BOY,
+                    props().stacksTo(1)));
+
 
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);

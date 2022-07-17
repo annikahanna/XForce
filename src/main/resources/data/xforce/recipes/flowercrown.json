@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "WPO",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:string"
+    },
+    "W": {
+      "item": "minecraft:white_tulip"
+    },
+    "P": {
+      "item": "minecraft:pink_tulip"
+    },
+    "O": {
+      "item": "minecraft:orange_tulip"
+    }
+  },
+  "result": {
+    "item": "xforce:flowercrown",
+    "count": 1
+  }
+}
