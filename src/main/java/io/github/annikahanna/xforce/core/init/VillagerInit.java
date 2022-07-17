@@ -48,6 +48,19 @@ public class VillagerInit {
                             ImmutableSet.of(),
                             SoundEvents.WOLF_HOWL));
 
+    public static final RegistryObject<PoiType> DJ_POI = POI_TYPES.register("dj_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Blocks.JUKEBOX.getStateDefinition().getPossibleStates()),
+                    1,1));
+
+    public static final RegistryObject<VillagerProfession> DJ =
+            VILLAGER_PROFESSIONS.register("dj",
+                    () -> new VillagerProfession("dj",
+                            x -> x.get() == DJ_POI.get(),
+                            x -> x.get() == DJ_POI.get(),
+                            ImmutableSet.of(),
+                            ImmutableSet.of(),
+                            SoundEvents.VILLAGER_WORK_TOOLSMITH));
+
     public static void registerPOIs(){
         try{
             ObfuscationReflectionHelper.findMethod(PoiType.class,
