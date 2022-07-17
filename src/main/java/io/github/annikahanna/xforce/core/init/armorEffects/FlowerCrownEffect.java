@@ -1,4 +1,4 @@
-package io.github.annikahanna.xforce.core.init.custom;
+package io.github.annikahanna.xforce.core.init.armorEffects;
 
 import com.google.common.collect.ImmutableMap;
 import io.github.annikahanna.xforce.core.init.ArmorMaterialInit;

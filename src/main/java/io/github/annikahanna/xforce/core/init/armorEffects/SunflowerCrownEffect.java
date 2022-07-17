@@ -1,4 +1,4 @@
-package io.github.annikahanna.xforce.core.init.custom;
+package io.github.annikahanna.xforce.core.init.armorEffects;
 
 import com.google.common.collect.ImmutableMap;
 import io.github.annikahanna.xforce.core.init.ArmorMaterialInit;
@@ -13,14 +13,14 @@ import net.minecraft.world.level.Level;
 
 import java.util.Map;
 
-public class HeadLampEffect extends ArmorItem {
+public class SunflowerCrownEffect extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(ArmorMaterialInit.HEADLAMP,
-                            new MobEffectInstance(MobEffects.NIGHT_VISION, 1200, 3)).build();
+                    .put(ArmorMaterialInit.SUNFLOWERCROWN,
+                            new MobEffectInstance(MobEffects.REGENERATION, 1200, 3)).build();
 
 
-    public HeadLampEffect(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
+    public SunflowerCrownEffect(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
     }
 

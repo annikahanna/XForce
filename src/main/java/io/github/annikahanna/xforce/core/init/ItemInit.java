@@ -1,11 +1,10 @@
 package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
-import io.github.annikahanna.xforce.core.init.custom.FlowerCrownEffect;
-import io.github.annikahanna.xforce.core.init.custom.HeadLampEffect;
-import io.github.annikahanna.xforce.core.init.custom.ModArmorItem;
-import io.github.annikahanna.xforce.core.init.custom.SunflowerCrownEffect;
-import net.minecraft.sounds.SoundEvents;
+import io.github.annikahanna.xforce.core.init.armorEffects.FlowerCrownEffect;
+import io.github.annikahanna.xforce.core.init.armorEffects.HeadLampEffect;
+import io.github.annikahanna.xforce.core.init.armorEffects.ModArmorItem;
+import io.github.annikahanna.xforce.core.init.armorEffects.SunflowerCrownEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -76,22 +75,22 @@ public class ItemInit {
 //MUSIC DISK
 
     public static final RegistryObject<Item> FANTASY_GIRL_MUSIC_DISC = ITEMS.register("fantasy_girl_music_disc",
-            () -> new RecordItem(4, ModSounds.FANTASY_GIRL,
+            () -> new RecordItem(4, SoundInit.FANTASY_GIRL,
                     props().stacksTo(1)));
     public static final RegistryObject<Item> COTTON_EYE_JOE_MUSIC_DISC = ITEMS.register("cotton_eye_joe_music_disc",
-            () -> new RecordItem(4, ModSounds.COTTON_EYE_JOE_GIRL,
+            () -> new RecordItem(4, SoundInit.COTTON_EYE_JOE_GIRL,
                     props().stacksTo(1)));
     public static final RegistryObject<Item> COUNTRY_GIRL_MUSIC_DISC = ITEMS.register("country_girl_music_disc",
-            () -> new RecordItem(4, ModSounds.COUNTRY_GIRL,
+            () -> new RecordItem(4, SoundInit.COUNTRY_GIRL,
                     props().stacksTo(1)));
     public static final RegistryObject<Item> RICK_ROLL_MUSIC_DISC = ITEMS.register("rick_roll_music_disc",
-            () -> new RecordItem(4, ModSounds.RICK_ROLL,
+            () -> new RecordItem(4, SoundInit.RICK_ROLL,
                     props().stacksTo(1)));
     public static final RegistryObject<Item> SHANIA_TWAIN_MUSIC_DISC = ITEMS.register("shania_twain_music_disc",
-            () -> new RecordItem(4, ModSounds.SHANIA_TWAIN,
+            () -> new RecordItem(4, SoundInit.SHANIA_TWAIN,
                     props().stacksTo(1)));
     public static final RegistryObject<Item> STRANGER_THINGS_MUSIC_DISC = ITEMS.register("stranger_things_music_disc",
-            () -> new RecordItem(4, ModSounds.STRANGER_THINGS,
+            () -> new RecordItem(4, SoundInit.STRANGER_THINGS,
                     props().stacksTo(1)));
 
 
