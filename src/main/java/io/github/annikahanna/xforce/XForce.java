@@ -1,6 +1,7 @@
 package io.github.annikahanna.xforce;
 
 import io.github.annikahanna.xforce.core.init.*;
+import io.github.annikahanna.xforce.core.world.structure.ModStructures;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,7 @@ public class XForce {
         EntityInit.ENTITIES.register(bus);
         SoundInit.SOUND_EVENTS.register(bus);
         VillagerInit.register(bus);
+        ModStructures.register(bus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event){
