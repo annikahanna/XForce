@@ -3,7 +3,7 @@
   "type": "minecraft:jigsaw",
 
   // the path to the template pool json file to use
-  "start_pool": "xforce:taverne/start_pool",
+  "start_pool": "xforce:dog_house/start_pool",
 
   // This is how many pieces away from the starting piece a piece of the structure can spawn
   // Think of it like the length of the branch of the structure
@@ -13,7 +13,7 @@
   "max_distance_from_center": 80,
 
   // The biome tag to use for what biomes that this structure can spawn in"
-  "biomes": "#xforce:has_structure/taverne",
+  "biomes": "#xforce:has_structure/dog_house",
 
   // The generation step for when to generate the structure. there are 10 stages you can pick from!
   // This surface structure stage places the structure before plants and ores are generated
@@ -44,11 +44,23 @@
   // What mobs can spawn over time in the structure.
   // Make sure you add the mob to the right category (monster, creature, etc)
   "spawn_overrides": {
-    "monster": {
+    "creature": {
       "bounding_box": "full", // Use the bounding box of entire structure instead of individual pieces.
       "spawns": [
         {
           "type": "minecraft:villager",
+          "weight": 3,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "type": "xforce:pixel",
+          "weight": 1,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "type": "xforce:corgi",
           "weight": 1,
           "minCount": 1,
           "maxCount": 1
