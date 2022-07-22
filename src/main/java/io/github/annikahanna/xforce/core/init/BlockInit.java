@@ -5,6 +5,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -27,11 +28,10 @@ public class BlockInit {
 
     public static final RegistryObject<FlowerBlock> HERB= register(
             "herb",
-            () -> new FlowerBlock(MobEffects.GLOWING, 9, BlockBehaviour.Properties.of(Material.AIR)
-                    .noCollission()
-                    .instabreak()
-                    .sound(SoundType.GRASS)
-                    .offsetType(BlockBehaviour.OffsetType.XZ)),
+            () -> new FlowerBlock(
+                    MobEffects.GLOWING,
+                    300,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)),
             new Item.Properties().tab(XForce.TAB));
 
 
