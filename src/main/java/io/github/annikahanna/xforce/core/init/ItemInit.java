@@ -1,13 +1,16 @@
 package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
+import io.github.annikahanna.xforce.common.custom.HolyGrenadeItem;
 import io.github.annikahanna.xforce.core.init.armorEffects.FlowerCrownEffect;
 import io.github.annikahanna.xforce.core.init.armorEffects.HeadLampEffect;
 import io.github.annikahanna.xforce.core.init.armorEffects.ModArmorItem;
 import io.github.annikahanna.xforce.core.init.armorEffects.SunflowerCrownEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -16,6 +19,8 @@ import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Supplier;
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, XForce.MODID);
@@ -72,6 +77,7 @@ public class ItemInit {
     public static final RegistryObject<ForgeSpawnEggItem> CORGI_SPWAN_EGG = ITEMS.register("corgi_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityInit.CORGI, 0x000000, 0xffffff, props()));
 
+
 //MUSIC DISK
 
     public static final RegistryObject<Item> FANTASY_GIRL_MUSIC_DISC = ITEMS.register("fantasy_girl_music_disc",
@@ -100,6 +106,11 @@ public class ItemInit {
     public static final RegistryObject<Item> ABBA_MUSIC_DISC = ITEMS.register("abba_music_disc",
             () -> new RecordItem(4, SoundInit.ABBA,
                     props().stacksTo(1)));
+
+    //CUSTOM
+
+    public static final RegistryObject<HolyGrenadeItem> HOLY_GRENADE = ITEMS.register("holy_grenade",
+            () -> new HolyGrenadeItem(props()));
 
 
    private static Item.Properties props(){

@@ -14,6 +14,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class VillagerInit {
 
@@ -21,6 +23,9 @@ public class VillagerInit {
             = DeferredRegister.create(ForgeRegistries.POI_TYPES, XForce.MODID);
     public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS
             = DeferredRegister.create(ForgeRegistries.PROFESSIONS, XForce.MODID);
+
+
+
 
     public static final RegistryObject<PoiType> HONEY_POI = POI_TYPES.register("honey_poi",
             () -> new PoiType(ImmutableSet.copyOf(Blocks.HONEY_BLOCK.getStateDefinition().getPossibleStates()),
@@ -46,7 +51,7 @@ public class VillagerInit {
                             x -> x.get() == DOG_POI.get(),
                             ImmutableSet.of(),
                             ImmutableSet.of(),
-                            SoundEvents.WOLF_HOWL));
+                            XForce.RANDOM_BREEDER()));
 
     public static final RegistryObject<PoiType> DJ_POI = POI_TYPES.register("dj_poi",
             () -> new PoiType(ImmutableSet.copyOf(Blocks.JUKEBOX.getStateDefinition().getPossibleStates()),
@@ -59,7 +64,7 @@ public class VillagerInit {
                             x -> x.get() == DJ_POI.get(),
                             ImmutableSet.of(),
                             ImmutableSet.of(),
-                            SoundEvents.VILLAGER_WORK_TOOLSMITH));
+                            XForce.RANDOM_DJ()));
 
     public static final RegistryObject<PoiType> HOST_POI = POI_TYPES.register("host_poi",
             () -> new PoiType(ImmutableSet.copyOf(Blocks.CRAFTING_TABLE.getStateDefinition().getPossibleStates()),
@@ -72,7 +77,7 @@ public class VillagerInit {
                             x -> x.get() == HOST_POI.get(),
                             ImmutableSet.of(),
                             ImmutableSet.of(),
-                            SoundEvents.VILLAGER_WORK_TOOLSMITH));
+                            XForce.RANDOM_BARKEEPER()));
 
     public static void registerPOIs(){
         try{

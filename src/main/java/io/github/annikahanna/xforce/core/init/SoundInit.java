@@ -24,6 +24,20 @@ public class SoundInit {
 
     public static RegistryObject<SoundEvent> ABBA = registerSoundEvent("abba");
 
+    public static RegistryObject<SoundEvent> DJ = registerSoundEvent("dj");
+    public static RegistryObject<SoundEvent> DJ2 = registerSoundEvent("dj2");
+    public static RegistryObject<SoundEvent> DJ3 = registerSoundEvent("dj3");
+    public static RegistryObject<SoundEvent> DJ4 = registerSoundEvent("dj4");
+    public static RegistryObject<SoundEvent> DJ5 = registerSoundEvent("dj5");
+    public static RegistryObject<SoundEvent> BARKEEPER = registerSoundEvent("barkeeper");
+    public static RegistryObject<SoundEvent> BARKEEPER2 = registerSoundEvent("barkeeper2");
+    public static RegistryObject<SoundEvent> BARKEEPER3 = registerSoundEvent("barkeeper3");
+    public static RegistryObject<SoundEvent> BREEDER = registerSoundEvent("breeder");
+    public static RegistryObject<SoundEvent> BREEDER2 = registerSoundEvent("breeder2");
+    public static RegistryObject<SoundEvent> BREEDER3 = registerSoundEvent("breeder3");
+    public static RegistryObject<SoundEvent> GRENADE = registerSoundEvent("grenade");
+
+
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(XForce.MODID, name)));
     }

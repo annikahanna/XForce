@@ -62,5 +62,93 @@
         "stream": true
       }
     ]
+  },
+  "dj2": {
+    "subtitle": "xforce.dj2",
+    "sounds": [
+      {
+        "name": "xforce:dj2"
+      }
+    ]
+  },
+  "dj3": {
+    "subtitle": "xforce.dj3",
+    "sounds": [
+      {
+        "name": "xforce:dj3"
+      }
+    ]
+  },
+  "dj4": {
+    "subtitle": "xforce.dj4",
+    "sounds": [
+      {
+        "name": "xforce:dj4"
+      }
+    ]
+  },
+  "dj5": {
+    "subtitle": "xforce.dj5",
+    "sounds": [
+      {
+        "name": "xforce:dj5"
+      }
+    ]
+  },
+  "barkeeper": {
+    "subtitle": "xforce.barkeeper",
+    "sounds": [
+      {
+        "name": "xforce:barkeeper"
+      }
+    ]
+  },
+  "barkeeper2": {
+    "subtitle": "xforce.barkeeper2",
+    "sounds": [
+      {
+        "name": "xforce:barkeeper2"
+      }
+    ]
+  },
+  "barkeeper3": {
+    "subtitle": "xforce.barkeeper3",
+    "sounds": [
+      {
+        "name": "xforce:barkeeper3"
+      }
+    ]
+  },
+  "breeder": {
+    "subtitle": "xforce.breeder",
+    "sounds": [
+      {
+        "name": "xforce:breeder"
+      }
+    ]
+  },
+  "breeder2": {
+    "subtitle": "xforce.breeder2",
+    "sounds": [
+      {
+        "name": "xforce:breeder2"
+      }
+    ]
+  },
+  "breeder3": {
+    "subtitle": "xforce.breeder3",
+    "sounds": [
+      {
+        "name": "xforce:breeder3"
+      }
+    ]
+  },
+  "grenade": {
+    "subtitle": "xforce.grenade",
+    "sounds": [
+      {
+        "name": "xforce:grenade"
+      }
+    ]
   }
 }
