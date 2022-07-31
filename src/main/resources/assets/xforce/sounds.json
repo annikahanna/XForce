@@ -150,5 +150,21 @@
         "name": "xforce:grenade"
       }
     ]
+  },
+  "gardener": {
+    "subtitle": "xforce.gardener",
+    "sounds": [
+      {
+        "name": "xforce:gardener"
+      }
+    ]
+  },
+  "gardener2": {
+    "subtitle": "xforce.gardener2",
+    "sounds": [
+      {
+        "name": "xforce:gardener2"
+      }
+    ]
   }
 }

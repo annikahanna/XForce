@@ -79,6 +79,19 @@ public class VillagerInit {
                             ImmutableSet.of(),
                             XForce.RANDOM_BARKEEPER()));
 
+    public static final RegistryObject<PoiType> GARDENER_POI = POI_TYPES.register("gardener_poi",
+            () -> new PoiType(ImmutableSet.copyOf(Blocks.HAY_BLOCK.getStateDefinition().getPossibleStates()),
+                    1,1));
+
+    public static final RegistryObject<VillagerProfession> GARDENER =
+            VILLAGER_PROFESSIONS.register("gardener",
+                    () -> new VillagerProfession("gardener",
+                            x -> x.get() == GARDENER_POI.get(),
+                            x -> x.get() == GARDENER_POI.get(),
+                            ImmutableSet.of(),
+                            ImmutableSet.of(),
+                            XForce.RANDOM_GARDENER()));
+
     public static void registerPOIs(){
         try{
             ObfuscationReflectionHelper.findMethod(PoiType.class,

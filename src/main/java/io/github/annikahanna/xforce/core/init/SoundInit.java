@@ -36,6 +36,8 @@ public class SoundInit {
     public static RegistryObject<SoundEvent> BREEDER2 = registerSoundEvent("breeder2");
     public static RegistryObject<SoundEvent> BREEDER3 = registerSoundEvent("breeder3");
     public static RegistryObject<SoundEvent> GRENADE = registerSoundEvent("grenade");
+    public static RegistryObject<SoundEvent> GARDENER = registerSoundEvent("gardener");
+    public static RegistryObject<SoundEvent> GARDENER2 = registerSoundEvent("gardener2");
 
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {

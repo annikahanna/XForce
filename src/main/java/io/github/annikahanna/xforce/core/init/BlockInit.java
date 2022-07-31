@@ -1,6 +1,10 @@
 package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
+import io.github.annikahanna.xforce.common.custom.BlackberryCropBlock;
+import io.github.annikahanna.xforce.common.custom.BlueberryCropBlock;
+import io.github.annikahanna.xforce.common.custom.LavendelCropBlock;
+import io.github.annikahanna.xforce.common.custom.RaspberryCropBlock;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -33,6 +37,49 @@ public class BlockInit {
                     300,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)),
             new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<FlowerBlock> LAVENDEL= register(
+            "lavendel",
+            () -> new FlowerBlock(
+                    MobEffects.GLOWING,
+                    300,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)),
+            new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<FlowerBlock> PANSY_BLUE = register(
+            "pansy_blue",
+            () -> new FlowerBlock(
+                    MobEffects.GLOWING,
+                    300,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)),
+            new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<FlowerBlock> PANSY_RED = register(
+            "pansy_red",
+            () -> new FlowerBlock(
+                    MobEffects.GLOWING,
+                    300,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)),
+            new Item.Properties().tab(XForce.TAB));
+
+    //CROPS
+
+    public static final RegistryObject<BlueberryCropBlock> BLUEBERRY_CROP= BLOCKS.register(
+            "blueberry_crop",
+            () -> new BlueberryCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<BlackberryCropBlock> BLACKBERRY_CROP= BLOCKS.register(
+            "blackberry_crop",
+            () -> new BlackberryCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<RaspberryCropBlock> RASPBERRY_CROP= BLOCKS.register(
+            "raspberry_crop",
+            () -> new RaspberryCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+    public static final RegistryObject<LavendelCropBlock> LAVENDEL_CROP= BLOCKS.register(
+            "lavendel_crop",
+            () -> new LavendelCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
 

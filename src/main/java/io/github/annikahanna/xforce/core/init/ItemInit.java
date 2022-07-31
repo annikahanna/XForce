@@ -41,6 +41,8 @@ public class ItemInit {
     public static final RegistryObject<Item> COCKTAIL = ITEMS.register("cocktail", () -> new Item(
             props().food(Foods.COCKTAIL)));
 
+
+
     //Tools
 
    public static final RegistryObject<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword",
@@ -112,6 +114,26 @@ public class ItemInit {
     public static final RegistryObject<HolyGrenadeItem> HOLY_GRENADE = ITEMS.register("holy_grenade",
             () -> new HolyGrenadeItem(props()));
 
+    //CROPS & SEEDS
+
+    public static final RegistryObject<Item> BLUEBERRY_SEEDS = ITEMS.register("blueberry_seeds",
+            () -> new ItemNameBlockItem(BlockInit.BLUEBERRY_CROP.get(),props()));
+
+    public static final RegistryObject<Item> BLUEBERRY = ITEMS.register("blueberry", () -> new Item(
+            props().food(Foods.BERRY)));
+    public static final RegistryObject<Item> BLACKBERRY_SEEDS = ITEMS.register("blackberry_seeds",
+            () -> new ItemNameBlockItem(BlockInit.BLACKBERRY_CROP.get(),props()));
+
+    public static final RegistryObject<Item> BLACKBERRY = ITEMS.register("blackberry", () -> new Item(
+            props().food(Foods.BERRY)));
+    public static final RegistryObject<Item> RASPBERRY_SEEDS = ITEMS.register("raspberry_seeds",
+            () -> new ItemNameBlockItem(BlockInit.RASPBERRY_CROP.get(),props()));
+
+    public static final RegistryObject<Item> RASPBERRY = ITEMS.register("raspberry", () -> new Item(
+            props().food(Foods.BERRY)));
+
+    public static final RegistryObject<Item> LAVENDEL_SEEDS = ITEMS.register("lavendel_seeds",
+            () -> new ItemNameBlockItem(BlockInit.LAVENDEL_CROP.get(),props()));
 
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);
@@ -144,6 +166,11 @@ public class ItemInit {
                         .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 300, 1), 1)
                         .build();
 
+        public static final FoodProperties BERRY =
+                new FoodProperties.Builder()
+                        .nutrition(2)
+                        .alwaysEat()
+                        .build();
    }
 
    public static class Tiers {

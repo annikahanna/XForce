@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "xforce:blocks/berry_stage4"
+  }
+}

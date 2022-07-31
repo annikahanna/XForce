@@ -49,6 +49,21 @@
   "entity.minecraft.villager.xforce.beekeeper": "Beekeeper",
   "entity.minecraft.villager.xforce.dog_breeder": "Dog Breeder",
   "entity.minecraft.villager.xforce.dj": "DJ",
-  "entity.minecraft.villager.xforce.host": "Host"
+  "entity.minecraft.villager.xforce.host": "Host",
+
+  "item.xforce.blueberry": "Blueberry",
+  "item.xforce.blueberry_seeds": "Blueberry Seeds",
+  "block.xforce.blueberry_crop": "Blueberry Crop",
+  "item.xforce.blackberry": "Blackberry",
+  "item.xforce.blackberry_seeds": "Blackberry Seeds",
+  "block.xforce.blackberry_crop": "Blackberry Crop",
+  "item.xforce.raspberry": "Raspberry",
+  "item.xforce.raspberry_seeds": "Raspberry Seeds",
+  "block.xforce.raspberry_crop": "Raspberry Crop",
+  "item.xforce.lavendel": "Lavendel",
+  "item.xforce.lavendel_seeds": "Lavendel Seeds",
+  "block.xforce.lavendel_crop": "Lavendel Crop",
+  "block.xforce.pansy_blue": "Blue Pansy",
+  "block.xforce.pansy_red": "Red Pansy"
 
 }

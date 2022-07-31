@@ -1,0 +1,6 @@
+{
+  "parent":  "minecraft:block/cross",
+  "textures": {
+    "cross": "xforce:blocks/pansy_blue"
+  }
+}

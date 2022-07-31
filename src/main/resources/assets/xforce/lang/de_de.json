@@ -49,5 +49,20 @@
   "entity.minecraft.villager.xforce.beekeeper": "Imker",
   "entity.minecraft.villager.xforce.dog_breeder": "Hundezüchter",
   "entity.minecraft.villager.xforce.dj": "DJ",
-  "entity.minecraft.villager.xforce.host": "Gastwirt"
+  "entity.minecraft.villager.xforce.host": "Gastwirt",
+
+  "item.xforce.blueberry": "Blaubeere",
+  "item.xforce.blueberry_seeds": "Blaubeeren Saamen",
+  "block.xforce.blueberry_crop": "Blaubeeren Strauch",
+  "item.xforce.blackberry": "Brombeere",
+  "item.xforce.blackberry_seeds": "Brombeeren Saamen",
+  "block.xforce.blackberry_crop": "Brombeeren Strauch",
+  "item.xforce.raspberry": "Himbeere",
+  "item.xforce.raspberry_seeds": "Himbeeren Samen",
+  "block.xforce.raspberry_crop": "Himbeeren Strauch",
+  "item.xforce.lavendel": "Lavendel",
+  "item.xforce.lavendel_seeds": "Lavendel Saamen",
+  "block.xforce.lavendel_crop": "Lavendel Strauch",
+  "block.xforce.pansy_blue": "Blaues Stiefmütterchen",
+  "block.xforce.pansy_red": "Rotes Stiefmütterchen"
 }

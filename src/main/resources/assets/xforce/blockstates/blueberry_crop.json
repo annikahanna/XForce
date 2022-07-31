@@ -1,0 +1,11 @@
+{
+  "variants": {
+    "age=0": { "model": "xforce:block/blueberry_stage0" },
+    "age=1": { "model": "xforce:block/blueberry_stage1" },
+    "age=2": { "model": "xforce:block/blueberry_stage2" },
+    "age=3": { "model": "xforce:block/blueberry_stage3" },
+    "age=4": { "model": "xforce:block/blueberry_stage4" },
+    "age=5": { "model": "xforce:block/blueberry_stage5" },
+    "age=6": { "model": "xforce:block/blueberry_stage6" }
+  }
+}

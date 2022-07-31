@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "xforce:blocks/lavendel_stage1"
+  }
+}
