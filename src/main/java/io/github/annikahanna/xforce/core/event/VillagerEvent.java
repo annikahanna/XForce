@@ -1,6 +1,7 @@
 package io.github.annikahanna.xforce.core.event;
 
 import io.github.annikahanna.xforce.XForce;
+import io.github.annikahanna.xforce.core.init.BlockInit;
 import io.github.annikahanna.xforce.core.init.ItemInit;
 import io.github.annikahanna.xforce.core.init.VillagerInit;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
@@ -274,6 +275,84 @@ public class VillagerEvent {
         if(event.getType() == VillagerInit.HOST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.ALKOHOL.get(), 1);
+            int villagerLevel = 3;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 5),
+                    stack,10,8,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.GARDENER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(BlockInit.PANSY_BLUE.get(), 1);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    stack,10,2,0.02F));
+        }
+        if(event.getType() == VillagerInit.GARDENER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(BlockInit.PANSY_RED.get(), 1);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    stack,10,2,0.02F));
+        }
+        if(event.getType() == VillagerInit.GARDENER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.LAVENDEL_SEEDS.get(), 1);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 3),
+                    stack,10,2,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.GARDENER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.BLUEBERRY_SEEDS.get(), 1);
+            int villagerLevel = 2;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 4),
+                    stack,10,5,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.GARDENER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(BlockInit.HERB.get(), 1);
+            int villagerLevel = 2;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 2),
+                    stack,10,5,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.GARDENER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(Items.EMERALD, 1);
+            int villagerLevel = 2;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(BlockInit.LAVENDEL.get(), 10),
+                    stack,10,5,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.GARDENER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.BLACKBERRY_SEEDS.get(), 1);
+            int villagerLevel = 3;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 5),
+                    stack,10,8,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.GARDENER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.RASPBERRY_SEEDS.get(), 1);
             int villagerLevel = 3;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
