@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "xforce:rosequarz_ore",
+    "xforce:ruby_ore",
+    "xforce:citrin_ore",
+    "xforce:malachite_ore",
+    "xforce:turmalin_ore",
+    "xforce:fluorite_ore"
+  ]
+}

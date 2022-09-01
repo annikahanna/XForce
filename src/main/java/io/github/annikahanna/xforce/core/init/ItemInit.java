@@ -1,16 +1,11 @@
 package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
-import io.github.annikahanna.xforce.common.custom.HolyGrenadeItem;
-import io.github.annikahanna.xforce.core.init.armorEffects.FlowerCrownEffect;
-import io.github.annikahanna.xforce.core.init.armorEffects.HeadLampEffect;
-import io.github.annikahanna.xforce.core.init.armorEffects.ModArmorItem;
-import io.github.annikahanna.xforce.core.init.armorEffects.SunflowerCrownEffect;
+import io.github.annikahanna.xforce.common.custom.*;
+import io.github.annikahanna.xforce.core.init.armorEffects.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -19,8 +14,6 @@ import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.util.function.Supplier;
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, XForce.MODID);
@@ -41,6 +34,13 @@ public class ItemInit {
     public static final RegistryObject<Item> COCKTAIL = ITEMS.register("cocktail", () -> new Item(
             props().food(Foods.COCKTAIL)));
 
+    public static final RegistryObject<PuffPuffKrautItem> PUFF_PUFF_KRAUT = ITEMS.register("puff_puff_kraut",
+            () -> new PuffPuffKrautItem(props().stacksTo(1)));
+
+    public static final RegistryObject<PuffPuffItem> PUFF_PUFF = ITEMS.register("puff_puff",
+            () -> new PuffPuffItem(props().stacksTo(1)));
+    public static final RegistryObject<PuffPuffPartItem> PUFF_PUFF_PART = ITEMS.register("puff_puff_part",
+            () -> new PuffPuffPartItem(props().stacksTo(1)));
 
 
     //Tools
@@ -65,6 +65,61 @@ public class ItemInit {
             () -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.LEGS, props()));
     public static final RegistryObject<ArmorItem> COPPER_BOOTS = ITEMS.register("copper_boots",
             () -> new ModArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.FEET, props()));
+
+    public static final RegistryObject<ArmorItem> ROSEQUARZ_HELMET = ITEMS.register("rosequarz_helmet",
+            () -> new ArmorItem(ArmorMaterialInit.ROSEQUARZ, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> ROSEQUARZ_CHESTPLATE = ITEMS.register("rosequarz_chestplate",
+            () -> new ArmorItem(ArmorMaterialInit.ROSEQUARZ, EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> ROSEQUARZ_LEGGINS = ITEMS.register("rosequarz_leggins",
+            () -> new ArmorItem(ArmorMaterialInit.ROSEQUARZ, EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> ROSEQUARZ_BOOTS = ITEMS.register("rosequarz_boots",
+            () -> new ModRosequarzArmorItem(ArmorMaterialInit.ROSEQUARZ, EquipmentSlot.FEET, props()));
+
+    public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet",
+            () -> new ArmorItem(ArmorMaterialInit.RUBY, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate",
+            () -> new ArmorItem(ArmorMaterialInit.RUBY, EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> RUBY_LEGGINS = ITEMS.register("ruby_leggins",
+            () -> new ArmorItem(ArmorMaterialInit.RUBY, EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> RUBY_BOOTS = ITEMS.register("ruby_boots",
+            () -> new ModRubyArmorItem(ArmorMaterialInit.RUBY, EquipmentSlot.FEET, props()));
+
+    public static final RegistryObject<ArmorItem> CITRIN_HELMET = ITEMS.register("citrin_helmet",
+            () -> new ArmorItem(ArmorMaterialInit.CITRIN, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> CITRIN_CHESTPLATE = ITEMS.register("citrin_chestplate",
+            () -> new ArmorItem(ArmorMaterialInit.CITRIN, EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> CITRIN_LEGGINS = ITEMS.register("citrin_leggins",
+            () -> new ArmorItem(ArmorMaterialInit.CITRIN, EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> CITRIN_BOOTS = ITEMS.register("citrin_boots",
+            () -> new ModCitrinArmorItem(ArmorMaterialInit.CITRIN, EquipmentSlot.FEET, props()));
+
+    public static final RegistryObject<ArmorItem> TURMALIN_HELMET = ITEMS.register("turmalin_helmet",
+            () -> new ArmorItem(ArmorMaterialInit.TURMALIN, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> TURMALIN_CHESTPLATE = ITEMS.register("turmalin_chestplate",
+            () -> new ArmorItem(ArmorMaterialInit.TURMALIN, EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> TURMALIN_LEGGINS = ITEMS.register("turmalin_leggins",
+            () -> new ArmorItem(ArmorMaterialInit.TURMALIN, EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> TURMALIN_BOOTS = ITEMS.register("turmalin_boots",
+            () -> new ModTurmalinArmorItem(ArmorMaterialInit.TURMALIN, EquipmentSlot.FEET, props()));
+
+    public static final RegistryObject<ArmorItem> FLUORITE_HELMET = ITEMS.register("fluorite_helmet",
+            () -> new ArmorItem(ArmorMaterialInit.FLUORITE, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> FLUORITE_CHESTPLATE = ITEMS.register("fluorite_chestplate",
+            () -> new ArmorItem(ArmorMaterialInit.FLUORITE, EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> FLUORITE_LEGGINS = ITEMS.register("fluorite_leggins",
+            () -> new ArmorItem(ArmorMaterialInit.FLUORITE, EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> FLUORITE_BOOTS = ITEMS.register("fluorite_boots",
+            () -> new ModFluoriteArmorItem(ArmorMaterialInit.FLUORITE, EquipmentSlot.FEET, props()));
+
+    public static final RegistryObject<ArmorItem> MALACHITE_HELMET = ITEMS.register("malachite_helmet",
+            () -> new ArmorItem(ArmorMaterialInit.MALACHITE, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> MALACHITE_CHESTPLATE = ITEMS.register("malachite_chestplate",
+            () -> new ArmorItem(ArmorMaterialInit.MALACHITE, EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> MALACHITE_LEGGINS = ITEMS.register("malachite_leggins",
+            () -> new ArmorItem(ArmorMaterialInit.MALACHITE, EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> MALACHITE_BOOTS = ITEMS.register("malachite_boots",
+            () -> new ModMalachiteArmorItem(ArmorMaterialInit.MALACHITE, EquipmentSlot.FEET, props()));
+
     public static final RegistryObject<ArmorItem> HEADLAMP = ITEMS.register("headlamp",
             () -> new HeadLampEffect(ArmorMaterialInit.HEADLAMP, EquipmentSlot.HEAD, props()));
     public static final RegistryObject<ArmorItem> FLOWERCROWN = ITEMS.register("flowercrown",
@@ -113,6 +168,11 @@ public class ItemInit {
 
     public static final RegistryObject<HolyGrenadeItem> HOLY_GRENADE = ITEMS.register("holy_grenade",
             () -> new HolyGrenadeItem(props()));
+    public static final RegistryObject<WreckingBallItem> WRECKING_BALL = ITEMS.register("wrecking_ball",
+            () -> new WreckingBallItem(props()));
+    public static final RegistryObject<RescueCallItem> RESCUE_PHONE = ITEMS.register("rescue_phone",
+            () -> new RescueCallItem(props()));
+
 
     //CROPS & SEEDS
 
@@ -134,6 +194,28 @@ public class ItemInit {
 
     public static final RegistryObject<Item> LAVENDEL_SEEDS = ITEMS.register("lavendel_seeds",
             () -> new ItemNameBlockItem(BlockInit.LAVENDEL_CROP.get(),props()));
+    public static final RegistryObject<Item> PUFF_PUFF_SEEDS = ITEMS.register("puff_puff_seeds",
+            () -> new ItemNameBlockItem(BlockInit.PUFF_PUFF_CROP.get(),props()));
+
+    //STONES
+
+    public static final RegistryObject<Item> ROSEQUARZ = ITEMS.register("rosequarz",
+            () -> new Item(props()));
+
+    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",
+            () -> new Item(props()));
+
+    public static final RegistryObject<Item> TURMALIN = ITEMS.register("turmalin",
+            () -> new Item(props()));
+
+    public static final RegistryObject<Item> CITRIN = ITEMS.register("citrin",
+            () -> new Item(props()));
+
+    public static final RegistryObject<Item> MALACHITE = ITEMS.register("malachite",
+            () -> new Item(props()));
+
+    public static final RegistryObject<Item> FLUORITE = ITEMS.register("fluorite",
+            () -> new Item(props()));
 
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  #",
+    " G ",
+    "F  "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:chain"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "F": {
+      "item": "minecraft:fire_charge"
+    }
+  },
+  "result": {
+    "item": "xforce:wrecking_ball",
+    "count": 1
+  }
+}

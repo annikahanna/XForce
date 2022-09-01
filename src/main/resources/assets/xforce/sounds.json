@@ -151,6 +151,14 @@
       }
     ]
   },
+  "miley_cyrus": {
+    "subtitle": "xforce.miley_cyrus",
+    "sounds": [
+      {
+        "name": "xforce:miley_cyrus"
+      }
+    ]
+  },
   "gardener": {
     "subtitle": "xforce.gardener",
     "sounds": [

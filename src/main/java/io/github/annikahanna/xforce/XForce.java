@@ -1,6 +1,8 @@
 package io.github.annikahanna.xforce;
 
 import io.github.annikahanna.xforce.core.init.*;
+import io.github.annikahanna.xforce.core.world.feature.ModConfiguredFeatures;
+import io.github.annikahanna.xforce.core.world.feature.ModPlacedFeatures;
 import io.github.annikahanna.xforce.core.world.structure.ModStructures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.sounds.SoundEvent;
@@ -37,6 +39,8 @@ public class XForce {
         SoundInit.SOUND_EVENTS.register(bus);
         VillagerInit.register(bus);
         ModStructures.register(bus);
+        ModConfiguredFeatures.register(bus);
+        ModPlacedFeatures.register(bus);
     }
 
     public static SoundEvent RANDOM_DJ(){
@@ -93,7 +97,7 @@ public class XForce {
     public static final CreativeModeTab TAB = new CreativeModeTab(MODID ) {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return ItemInit.HOLY_GRENADE.get().getDefaultInstance();
+            return ItemInit.WRECKING_BALL.get().getDefaultInstance();
         }
 
 

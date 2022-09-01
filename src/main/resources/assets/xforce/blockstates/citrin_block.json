@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "xforce:block/citrin_block" }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "c c",
+    "c c"
+  ],
+  "key": {
+    "c": {
+      "item": "xforce:citrin"
+    }
+  },
+  "result": {
+    "item": "xforce:citrin_boots",
+    "count": 1
+  }
+}

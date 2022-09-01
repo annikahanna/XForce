@@ -1,17 +1,12 @@
 package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
-import io.github.annikahanna.xforce.common.custom.BlackberryCropBlock;
-import io.github.annikahanna.xforce.common.custom.BlueberryCropBlock;
-import io.github.annikahanna.xforce.common.custom.LavendelCropBlock;
-import io.github.annikahanna.xforce.common.custom.RaspberryCropBlock;
+import io.github.annikahanna.xforce.common.custom.*;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.DeferredRegister;
@@ -25,11 +20,8 @@ import java.util.function.Supplier;
 public class BlockInit {
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, XForce.MODID);
-   /* public static final RegistryObject<Block> HERB= register(
-            "herb",
-            () -> new Block(BlockBehaviour.Properties.of(Material.PLANT).strength(0,0)),
-            new Item.Properties().tab(XForce.TAB));*/
 
+    //FLOWERS
     public static final RegistryObject<FlowerBlock> HERB= register(
             "herb",
             () -> new FlowerBlock(
@@ -81,7 +73,67 @@ public class BlockInit {
             () -> new LavendelCropBlock(
                     BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
+    public static final RegistryObject<PuffPuffCropBlock> PUFF_PUFF_CROP= BLOCKS.register(
+            "puff_puff_crop",
+            () -> new PuffPuffCropBlock(
+                    BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
+    //ORE
+    public static final RegistryObject<Block> ROSEQUARZ_ORE = register("rosequarz_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> RUBY_ORE = register("ruby_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> TURMALIN_ORE = register("turmalin_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> CITRIN_ORE = register("citrin_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> MALACHITE_ORE = register("malachite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> FLUORITE_ORE = register("fluorite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(3f).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)), new Item.Properties().tab(XForce.TAB));
+
+    //EDELSTEIN BLOCK
+
+    public static final RegistryObject<Block> ROSEQUARZ_BLOCK = register("rosequarz_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+            .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> RUBY_BLOCK = register("ruby_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> CITRIN_BLOCK = register("citrin_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> TURMALIN_BLOCK = register("turmalin_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> FLUORITE_BLOCK = register("fluorite_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> MALACHITE_BLOCK = register("malachite_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
 
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier, Item.Properties properties){
@@ -90,10 +142,3 @@ public class BlockInit {
         return block;
     }
 }
-
-/*public static final RegistryObject<Block> HERB = register(
-            "herb", ()-> new FlowerBlock(MobEffects.WEAKNESS, 9, BlockBehaviour.Properties.of(Material.PLANT)
-                    .noCollission()
-                    .instabreak()
-                    .sound(SoundType.GRASS)
-                    .offsetType(BlockBehaviour.OffsetType.XZ)),new Item.Properties().tab(XForce.TAB));*/

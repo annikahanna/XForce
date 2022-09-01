@@ -3,6 +3,9 @@
   "item.xforce.schnaps": "Schnaps",
   "item.xforce.beer": "Beer",
   "item.xforce.cocktail": "Cocktail",
+  "item.xforce.puff_puff_kraut": "Puff Puff Herb",
+  "item.xforce.puff_puff": "Puff Puff",
+  "item.xforce.puff_puff_part": "Puff Puff Part",
 
   "block.xforce.herb": "Herb",
 
@@ -17,6 +20,36 @@
   "item.xforce.copper_leggins": "Copper Leggins",
   "item.xforce.copper_boots": "Copper Boots",
 
+  "item.xforce.rosequarz_helmet": "Rosequarz Helmet",
+  "item.xforce.rosequarz_chestplate": "Rosequarz Chestplate",
+  "item.xforce.rosequarz_leggins": "Rosequarz Leggins",
+  "item.xforce.rosequarz_boots": "Rosequarz Boots",
+
+  "item.xforce.ruby_helmet": "Ruby Helmet",
+  "item.xforce.ruby_chestplate": "Ruby Chestplate",
+  "item.xforce.ruby_leggins": "Ruby Leggins",
+  "item.xforce.ruby_boots": "Ruby Boots",
+
+  "item.xforce.citrin_helmet": "Citrin Helmet",
+  "item.xforce.citrin_chestplate": "Citrin Chestplate",
+  "item.xforce.citrin_leggins": "Citrin Leggins",
+  "item.xforce.citrin_boots": "Citrin Boots",
+
+  "item.xforce.turmalin_helmet": "Turmalin Helmet",
+  "item.xforce.turmalin_chestplate": "Turmalin Chestplate",
+  "item.xforce.turmalin_leggins": "Turmalin Leggins",
+  "item.xforce.turmalin_boots": "Turmalin Boots",
+
+  "item.xforce.fluorite_helmet": "Fluorite Helmet",
+  "item.xforce.fluorite_chestplate": "Fluorite Chestplate",
+  "item.xforce.fluorite_leggins": "Fluorite Leggins",
+  "item.xforce.fluorite_boots": "Fluorite Boots",
+
+  "item.xforce.malachite_helmet": "Malachite Helmet",
+  "item.xforce.malachite_chestplate": "Malachite Chestplate",
+  "item.xforce.malachite_leggins": "Malachite Leggins",
+  "item.xforce.malachite_boots": "Malachite Boots",
+
   "item.xforce.headlamp": "Headlamp",
   "item.xforce.flowercrown": "Flower Crown",
   "item.xforce.sunflowercrown": "Sunflower Cown",
@@ -28,6 +61,8 @@
   "item.xforce.corgi_spawn_egg": "Corgi Spawn Egg",
 
   "item.xforce.holy_grenade": "Holy Grenade",
+  "item.xforce.wrecking_ball": "Wrecking Ball",
+  "item.xforce.rescue_phone": "Rescue Phone",
 
   "item.xforce.fantasy_girl_music_disc": "Fantasy Girl Music Disc",
   "item.xforce.fantasy_girl_music_disc.desc": "Johnny O - Fantasy Girl",
@@ -64,7 +99,27 @@
   "item.xforce.lavendel": "Lavendel",
   "item.xforce.lavendel_seeds": "Lavendel Seeds",
   "block.xforce.lavendel_crop": "Lavendel Crop",
+  "item.xforce.puff_puff_seeds": "Puff Puff Seeds",
+  "block.xforce.puff_puff_crop": "Puff Puff Crop",
   "block.xforce.pansy_blue": "Blue Pansy",
-  "block.xforce.pansy_red": "Red Pansy"
+  "block.xforce.pansy_red": "Red Pansy",
 
+  "block.xforce.rosequarz_ore": "Rosequarz Ore",
+  "block.xforce.ruby_ore": "Ruby Ore",
+  "block.xforce.citrin_ore": "Citrin Ore",
+  "block.xforce.turmalin_ore": "Turmalin Ore",
+  "block.xforce.malachite_ore": "Malachite Ore",
+  "block.xforce.fluorite_ore": "Fluorite Ore",
+  "item.xforce.rosequarz": "Rosequarz",
+  "item.xforce.ruby": "Ruby",
+  "item.xforce.citrin": "Citrin",
+  "item.xforce.turmalin": "Turmalin",
+  "item.xforce.malachite": "Malachite",
+  "item.xforce.fluorite": "Fluorite",
+  "block.xforce.rosequarz_block": "Rosequarz Block",
+  "block.xforce.ruby_block": "Ruby Block",
+  "block.xforce.turmalin_block": "Turmalin Block",
+  "block.xforce.citrin_block": "Citrin Block",
+  "block.xforce.fluorite_block": "Fluorite Block",
+  "block.xforce.malachite_block": "Malachite Block"
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#R#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "xforce:puff_puff_part"
+    },
+    "R": {
+      "item": "minecraft:raw_gold"
+    }
+  },
+  "result": {
+    "item": "xforce:puff_puff",
+    "count": 1
+  }
+}

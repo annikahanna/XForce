@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "c c",
+    "   "
+  ],
+  "key": {
+    "c": {
+      "item": "xforce:fluorite"
+    }
+  },
+  "result": {
+    "item": "xforce:fluorite_helmet",
+    "count": 1
+  }
+}

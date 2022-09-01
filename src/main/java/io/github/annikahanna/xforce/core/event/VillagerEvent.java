@@ -232,6 +232,16 @@ public class VillagerEvent {
                     stack,10,10,0.02F));
         }
 
+        if(event.getType() == VillagerInit.DJ.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.PUFF_PUFF.get(), 1);
+            int villagerLevel = 4;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 30),
+                    stack,10,10,0.02F));
+        }
+
         if(event.getType() == VillagerInit.HOST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.BEER.get(), 1);
@@ -322,6 +332,16 @@ public class VillagerEvent {
 
         if(event.getType() == VillagerInit.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.PUFF_PUFF_SEEDS.get(), 1);
+            int villagerLevel = 2;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 10),
+                    stack,10,5,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.GARDENER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(BlockInit.HERB.get(), 1);
             int villagerLevel = 2;
 
@@ -359,6 +379,7 @@ public class VillagerEvent {
                     new ItemStack(Items.EMERALD, 5),
                     stack,10,8,0.02F));
         }
+
 
 
             //last parameters: max uses, experience, multipliere
