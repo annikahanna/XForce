@@ -22,7 +22,7 @@ public class VillagerInit {
     public static final DeferredRegister<PoiType> POI_TYPES
             = DeferredRegister.create(ForgeRegistries.POI_TYPES, XForce.MODID);
     public static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS
-            = DeferredRegister.create(ForgeRegistries.PROFESSIONS, XForce.MODID);
+            = DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, XForce.MODID);
 
 
 

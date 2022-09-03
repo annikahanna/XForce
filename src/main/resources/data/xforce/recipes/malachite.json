@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xforce:malachite_block"
+    }
+  ],
+  "result": {
+    "item": "xforce:malachite",
+    "count": 9
+  }
+}

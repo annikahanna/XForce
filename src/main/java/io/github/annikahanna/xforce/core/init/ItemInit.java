@@ -56,6 +56,7 @@ public class ItemInit {
     public static final RegistryObject<HoeItem> COPPER_HOE = ITEMS.register("copper_hoe",
             () -> new HoeItem(Tiers.COPPER,5,3.5f, props()));
 
+
 //ARMOR
     public static final RegistryObject<ArmorItem> COPPER_HELMET = ITEMS.register("copper_helmet",
         () -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.HEAD, props()));
@@ -119,6 +120,15 @@ public class ItemInit {
             () -> new ArmorItem(ArmorMaterialInit.MALACHITE, EquipmentSlot.LEGS, props()));
     public static final RegistryObject<ArmorItem> MALACHITE_BOOTS = ITEMS.register("malachite_boots",
             () -> new ModMalachiteArmorItem(ArmorMaterialInit.MALACHITE, EquipmentSlot.FEET, props()));
+
+    public static final RegistryObject<ArmorItem> AMBER_HELMET = ITEMS.register("amber_helmet",
+            () -> new ArmorItem(ArmorMaterialInit.AMBER, EquipmentSlot.HEAD, props()));
+    public static final RegistryObject<ArmorItem> AMBER_CHESTPLATE = ITEMS.register("amber_chestplate",
+            () -> new ArmorItem(ArmorMaterialInit.AMBER, EquipmentSlot.CHEST, props()));
+    public static final RegistryObject<ArmorItem> AMBER_LEGGINS = ITEMS.register("amber_leggins",
+            () -> new ArmorItem(ArmorMaterialInit.AMBER, EquipmentSlot.LEGS, props()));
+    public static final RegistryObject<ArmorItem> AMBER_BOOTS = ITEMS.register("amber_boots",
+            () -> new ModAmberArmorItem(ArmorMaterialInit.AMBER, EquipmentSlot.FEET, props()));
 
     public static final RegistryObject<ArmorItem> HEADLAMP = ITEMS.register("headlamp",
             () -> new HeadLampEffect(ArmorMaterialInit.HEADLAMP, EquipmentSlot.HEAD, props()));
@@ -217,6 +227,9 @@ public class ItemInit {
     public static final RegistryObject<Item> FLUORITE = ITEMS.register("fluorite",
             () -> new Item(props()));
 
+    public static final RegistryObject<Item> AMBER = ITEMS.register("amber",
+            () -> new Item(props()));
+
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);
    }
@@ -264,5 +277,6 @@ public class ItemInit {
                350,
                null,
                () -> Ingredient.of(Items.COPPER_INGOT));
+
    }
 }

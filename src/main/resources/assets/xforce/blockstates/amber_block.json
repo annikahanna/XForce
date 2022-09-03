@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "xforce:block/amber_block" }
+  }
+}

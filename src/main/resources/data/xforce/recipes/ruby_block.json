@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "ccc",
+    "ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "xforce:ruby"
+    }
+  },
+  "result": {
+    "item": "xforce:ruby_block",
+    "count": 1
+  }
+}

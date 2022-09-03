@@ -50,6 +50,11 @@
   "item.xforce.malachite_leggins": "Malachite Leggins",
   "item.xforce.malachite_boots": "Malachite Boots",
 
+  "item.xforce.amber_helmet": "Amber Helmet",
+  "item.xforce.amber_chestplate": "Amber Chestplate",
+  "item.xforce.amber_leggins": "Amber Leggins",
+  "item.xforce.amber_boots": "Amber Boots",
+
   "item.xforce.headlamp": "Headlamp",
   "item.xforce.flowercrown": "Flower Crown",
   "item.xforce.sunflowercrown": "Sunflower Cown",
@@ -116,10 +121,12 @@
   "item.xforce.turmalin": "Turmalin",
   "item.xforce.malachite": "Malachite",
   "item.xforce.fluorite": "Fluorite",
+  "item.xforce.amber": "Amber",
   "block.xforce.rosequarz_block": "Rosequarz Block",
   "block.xforce.ruby_block": "Ruby Block",
   "block.xforce.turmalin_block": "Turmalin Block",
   "block.xforce.citrin_block": "Citrin Block",
   "block.xforce.fluorite_block": "Fluorite Block",
-  "block.xforce.malachite_block": "Malachite Block"
+  "block.xforce.malachite_block": "Malachite Block",
+  "block.xforce.amber_block": "Amber Block"
 }

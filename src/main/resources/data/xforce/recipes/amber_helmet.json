@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "c c",
+    "   "
+  ],
+  "key": {
+    "c": {
+      "item": "xforce:amber"
+    }
+  },
+  "result": {
+    "item": "xforce:amber_helmet",
+    "count": 1
+  }
+}

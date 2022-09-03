@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "ccc",
+    "ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "xforce:turmalin"
+    }
+  },
+  "result": {
+    "item": "xforce:turmalin_block",
+    "count": 1
+  }
+}

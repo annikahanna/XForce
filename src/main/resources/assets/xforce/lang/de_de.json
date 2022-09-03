@@ -50,6 +50,11 @@
   "item.xforce.malachite_leggins": "Malachite Beinschutz",
   "item.xforce.malachite_boots": "Malachite Stiefel",
 
+  "item.xforce.amber_helmet": "Bernstein Helmet",
+  "item.xforce.amber_chestplate": "Bernstein Brustpanzer",
+  "item.xforce.amber_leggins": "Bernstein Beinschutz",
+  "item.xforce.amber_boots": "Bernstein Stiefel",
+
   "item.xforce.headlamp": "Stirnlampe",
   "item.xforce.flowercrown": "Blumenkrone",
   "item.xforce.sunflowercrown": "Sonnenblumenkrone",
@@ -116,10 +121,12 @@
   "item.xforce.turmalin": "Turmalin",
   "item.xforce.malachite": "Malachite",
   "item.xforce.fluorite": "Fluorite",
+  "item.xforce.amber": "Bernstein",
   "block.xforce.rosequarz_block": "Rosenquarz Block",
   "block.xforce.ruby_block": "Rubin Block",
   "block.xforce.turmalin_block": "Turmalin Block",
   "block.xforce.citrin_block": "Citrin Block",
   "block.xforce.fluorite_block": "Fluorite Block",
-  "block.xforce.malachite_block": "Malachite Block"
+  "block.xforce.malachite_block": "Malachite Block",
+  "block.xforce.amber_block": "Bernstein Block"
 }

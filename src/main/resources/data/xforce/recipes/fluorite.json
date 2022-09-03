@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xforce:fluorite_block"
+    }
+  ],
+  "result": {
+    "item": "xforce:fluorite",
+    "count": 9
+  }
+}

@@ -71,6 +71,15 @@ public final class ArmorMaterialInit {
             SoundEvents.AMETHYST_BLOCK_HIT,
             () -> Ingredient.of(ItemInit.MALACHITE.get()));
 
+    public static final ArmorMaterial AMBER = new BaseArmorMaterial(100,
+            new int[] { 100, 100, 100, 100 },
+            new int[]{3, 6, 6, 3},
+            0.0f,
+            3f,
+            XForce.MODID + ":amber",
+            SoundEvents.AMETHYST_BLOCK_HIT,
+            () -> Ingredient.of(ItemInit.AMBER.get()));
+
     public static final ArmorMaterial HEADLAMP = new BaseArmorMaterial(0,
             new int[] { 5000, 5000, 5000, 5000 },
             new int[]{0, 0, 0, 0},

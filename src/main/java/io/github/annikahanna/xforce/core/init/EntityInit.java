@@ -17,7 +17,7 @@ public class EntityInit {
 
     private EntityInit(){}
 
-    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, XForce.MODID);
+    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, XForce.MODID);
 
     public static final RegistryObject<EntityType<Pixel>> PIXEL = ENTITIES.register(
             "pixel",
