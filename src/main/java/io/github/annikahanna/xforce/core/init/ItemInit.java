@@ -35,13 +35,18 @@ public class ItemInit {
             props().food(Foods.COCKTAIL)));
 
     public static final RegistryObject<PuffPuffKrautItem> PUFF_PUFF_KRAUT = ITEMS.register("puff_puff_kraut",
-            () -> new PuffPuffKrautItem(props().stacksTo(1)));
+            () -> new PuffPuffKrautItem(props()));
 
     public static final RegistryObject<PuffPuffItem> PUFF_PUFF = ITEMS.register("puff_puff",
-            () -> new PuffPuffItem(props().stacksTo(1)));
+            () -> new PuffPuffItem(props()));
     public static final RegistryObject<PuffPuffPartItem> PUFF_PUFF_PART = ITEMS.register("puff_puff_part",
-            () -> new PuffPuffPartItem(props().stacksTo(1)));
+            () -> new PuffPuffPartItem(props()));
 
+    public static final RegistryObject<Item> JAM = ITEMS.register("jam", () -> new Item(
+            props().food(Foods.JAM)));
+
+    public static final RegistryObject<Item> JAM_BREAD = ITEMS.register("jam_bread", () -> new Item(
+            props().food(Foods.JAM_BREAD)));
 
     //Tools
 
@@ -55,6 +60,9 @@ public class ItemInit {
             () -> new AxeItem(Tiers.COPPER,5,3.5f, props()));
     public static final RegistryObject<HoeItem> COPPER_HOE = ITEMS.register("copper_hoe",
             () -> new HoeItem(Tiers.COPPER,5,3.5f, props()));
+
+    public static final RegistryObject<SwordItem> SALAMI = ITEMS.register("salami",
+            () -> new SwordItem(Tiers.SALAMI, 5,3.5f, props()));
 
 
 //ARMOR
@@ -174,6 +182,10 @@ public class ItemInit {
             () -> new RecordItem(4, SoundInit.ABBA,
                     props().stacksTo(1)));
 
+    public static final RegistryObject<Item> PIRATE_MUSIC_DISC = ITEMS.register("pirate_music_disc",
+            () -> new RecordItem(4, SoundInit.PIRATE,
+                    props().stacksTo(1)));
+
     //CUSTOM
 
     public static final RegistryObject<HolyGrenadeItem> HOLY_GRENADE = ITEMS.register("holy_grenade",
@@ -266,6 +278,22 @@ public class ItemInit {
                         .nutrition(2)
                         .alwaysEat()
                         .build();
+
+        public static final FoodProperties JAM =
+                new FoodProperties.Builder()
+                        .nutrition(4)
+                        .build();
+
+        public static final FoodProperties JAM_BREAD =
+                new FoodProperties.Builder()
+                        .nutrition(9)
+                        .build();
+
+        public static final FoodProperties SALAMI =
+                new FoodProperties.Builder()
+                        .nutrition(6)
+                        .alwaysEat()
+                        .build();
    }
 
    public static class Tiers {
@@ -277,6 +305,15 @@ public class ItemInit {
                350,
                null,
                () -> Ingredient.of(Items.COPPER_INGOT));
+
+       public static final Tier SALAMI = new ForgeTier(
+               3,
+               3,
+               5f,
+               5,
+               350,
+               null,
+               () -> Ingredient.of(Items.PORKCHOP));
 
    }
 }

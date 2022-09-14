@@ -114,6 +114,16 @@ public class VillagerEvent {
 
         if(event.getType() == VillagerInit.DOG_BREEDER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(Items.NAME_TAG, 1);
+            int villagerLevel = 2;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    stack,10,5,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.DOG_BREEDER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.CORGI_SPWAN_EGG.get(), 1);
             int villagerLevel = 2;
 
@@ -149,6 +159,16 @@ public class VillagerEvent {
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                     new ItemStack(Items.NOTE_BLOCK, 3),
+                    stack,10,2,0.02F));
+        }
+
+        if(event.getType() == VillagerInit.DJ.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(ItemInit.PIRATE_MUSIC_DISC.get(), 1);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(Items.BIRCH_BOAT, 1),
                     stack,10,2,0.02F));
         }
 

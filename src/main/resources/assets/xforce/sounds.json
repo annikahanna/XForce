@@ -63,6 +63,14 @@
       }
     ]
   },
+  "pirate": {
+    "sounds": [
+      {
+        "name": "xforce:pirate",
+        "stream": true
+      }
+    ]
+  },
   "dj2": {
     "subtitle": "xforce.dj2",
     "sounds": [

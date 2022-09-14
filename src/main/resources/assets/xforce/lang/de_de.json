@@ -6,6 +6,8 @@
   "item.xforce.puff_puff_kraut": "Puff Puff Kraut",
   "item.xforce.puff_puff": "Puff Puff",
   "item.xforce.puff_puff_part": "Puff Puff Teil",
+  "item.xforce.jam": "Marmelade",
+  "item.xforce.jam_bread": "Marmeladen Bread",
 
   "block.xforce.herb": "Kräuter",
 
@@ -14,6 +16,8 @@
   "item.xforce.copper_axe": "Kupfer Axt",
   "item.xforce.copper_shovel": "Kupfer Schaufel",
   "item.xforce.copper_hoe": "Kupfer Hacke",
+
+  "item.xforce.salami": "Salami",
 
   "item.xforce.copper_helmet": "Kupfer Helm",
   "item.xforce.copper_chestplate": "Kupfer Brustpanzer",
@@ -85,6 +89,8 @@
   "item.xforce.good_boy_music_disc.desc": "Flipper - I'm the guud boi",
   "item.xforce.abba_music_disc": "Abba Music Disc",
   "item.xforce.abba_music_disc.desc": "Abba - Mamma Mia",
+  "item.xforce.pirate_music_disc": "Pirate Music Disc",
+  "item.xforce.pirate_music_disc.desc": "Pirate - Arrr",
 
   "entity.minecraft.villager.xforce.beekeeper": "Imker",
   "entity.minecraft.villager.xforce.dog_breeder": "Hundezüchter",

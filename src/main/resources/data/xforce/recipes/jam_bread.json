@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xforce:jam"
+    },
+    {
+      "item": "minecraft:bread"
+    }
+  ],
+  "result": {
+    "item": "xforce:jam_bread",
+    "count": 1
+  }
+}

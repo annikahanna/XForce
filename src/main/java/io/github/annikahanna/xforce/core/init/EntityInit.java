@@ -3,12 +3,9 @@ package io.github.annikahanna.xforce.core.init;
 import io.github.annikahanna.xforce.XForce;
 import io.github.annikahanna.xforce.common.entity.Corgi;
 import io.github.annikahanna.xforce.common.entity.Pixel;
-import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
-import net.minecraft.world.entity.npc.Villager;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -32,5 +29,6 @@ public class EntityInit {
                     .sized(0.8f,0.6f)
                     .build(new ResourceLocation(XForce.MODID, "corgi")
                             .toString()));
+
 
 }

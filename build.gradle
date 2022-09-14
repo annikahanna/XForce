@@ -4,7 +4,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.+'
 }
 
-version = '1.2'
+version = '1.2.1'
 group = 'io.github.annikahanna.X-Force' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'xforce'
 
@@ -152,7 +152,7 @@ jar {
         attributes([
                 "Specification-Title"     : "X-Force",
                 "Specification-Vendor"    : "AnnikaHanna",
-                "Specification-Version"   : "1.2", // We are version 1 of ourselves
+                "Specification-Version"   : "1.2.1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "AnnikaHanna",
