@@ -18,12 +18,11 @@ public class WreckingBallItem extends Item {
     public InteractionResultHolder<ItemStack> use(Level p_43142_, Player player, InteractionHand p_43144_) {
         ItemStack itemstack = player.getItemInHand(p_43144_);
         player.playSound(SoundInit.MILEY_CYRUS.get());
-        if (!p_43142_.isClientSide) {
             HolyGrenade grenade = new HolyGrenade(p_43142_, player);
             grenade.setItem(itemstack);
             grenade.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 2F, 1.0F);
             p_43142_.addFreshEntity(grenade);
-        }
+
 
        player.awardStat(Stats.ITEM_USED.get(this));
         if (!player.getAbilities().instabuild) {
