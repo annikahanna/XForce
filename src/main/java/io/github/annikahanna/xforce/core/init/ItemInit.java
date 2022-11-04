@@ -72,6 +72,8 @@ public class ItemInit {
     public static final RegistryObject<SwordItem> SALAMI = ITEMS.register("salami",
             () -> new SwordItem(Tiers.SALAMI, 5,3.5f, props().stacksTo(64)));
 
+    public static final RegistryObject<HolyCrossItem> HOLY_CROSS_ITEM = ITEMS.register("holy_cross",
+            () -> new HolyCrossItem(Tiers.HOLY_CROSS, 5,3.5f, props().stacksTo(64)));
 
 //ARMOR
     public static final RegistryObject<ArmorItem> COPPER_HELMET = ITEMS.register("copper_helmet",
@@ -322,6 +324,15 @@ public class ItemInit {
                350,
                null,
                () -> Ingredient.of(Items.PORKCHOP));
+
+       public static final Tier HOLY_CROSS = new ForgeTier(
+               3,
+               100,
+               5f,
+               2,
+               350,
+               null,
+               () -> Ingredient.of(Items.GOLDEN_SWORD));
 
    }
 }

@@ -182,5 +182,13 @@
         "name": "xforce:gardener2"
       }
     ]
+  },
+  "holy_cross": {
+    "subtitle": "xforce.holy_cross",
+    "sounds": [
+      {
+        "name": "xforce:holy_cross"
+      }
+    ]
   }
 }
