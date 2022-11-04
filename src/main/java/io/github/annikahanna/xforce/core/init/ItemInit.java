@@ -37,16 +37,24 @@ public class ItemInit {
     public static final RegistryObject<PuffPuffKrautItem> PUFF_PUFF_KRAUT = ITEMS.register("puff_puff_kraut",
             () -> new PuffPuffKrautItem(props()));
 
-    public static final RegistryObject<PuffPuffItem> PUFF_PUFF = ITEMS.register("puff_puff",
-            () -> new PuffPuffItem(props()));
-    public static final RegistryObject<PuffPuffPartItem> PUFF_PUFF_PART = ITEMS.register("puff_puff_part",
-            () -> new PuffPuffPartItem(props()));
-
     public static final RegistryObject<Item> JAM = ITEMS.register("jam", () -> new Item(
             props().food(Foods.JAM)));
 
     public static final RegistryObject<Item> JAM_BREAD = ITEMS.register("jam_bread", () -> new Item(
             props().food(Foods.JAM_BREAD)));
+
+    //Drugs
+
+    public static final RegistryObject<PuffPuffItem> PUFF_PUFF = ITEMS.register("puff_puff",
+            () -> new PuffPuffItem(props()));
+    public static final RegistryObject<PuffPuffPartItem> PUFF_PUFF_PART = ITEMS.register("puff_puff_part",
+            () -> new PuffPuffPartItem(props()));
+
+    public static final RegistryObject<OpiumItem> OPIUM = ITEMS.register("opium",
+            () -> new OpiumItem(props()));
+    public static final RegistryObject<BleiItem> BLEI = ITEMS.register("blei",
+            () -> new BleiItem(props()));
+
 
     //Tools
 
@@ -62,7 +70,7 @@ public class ItemInit {
             () -> new HoeItem(Tiers.COPPER,5,3.5f, props()));
 
     public static final RegistryObject<SwordItem> SALAMI = ITEMS.register("salami",
-            () -> new SwordItem(Tiers.SALAMI, 5,3.5f, props()));
+            () -> new SwordItem(Tiers.SALAMI, 5,3.5f, props().stacksTo(64)));
 
 
 //ARMOR
