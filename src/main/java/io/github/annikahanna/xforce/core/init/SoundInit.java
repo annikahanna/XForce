@@ -26,6 +26,10 @@ public class SoundInit {
 
     public static RegistryObject<SoundEvent> PIRATE = registerSoundEvent("pirate");
 
+    public static RegistryObject<SoundEvent> ADVENTURE = registerSoundEvent("adventure");
+
+    public static RegistryObject<SoundEvent> KOHLE = registerSoundEvent("kohle");
+
     public static RegistryObject<SoundEvent> DJ = registerSoundEvent("dj");
     public static RegistryObject<SoundEvent> DJ2 = registerSoundEvent("dj2");
     public static RegistryObject<SoundEvent> DJ3 = registerSoundEvent("dj3");

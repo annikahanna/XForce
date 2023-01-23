@@ -15,15 +15,12 @@ import net.minecraft.world.level.Level;
 
 public class HolyCrossItem extends SwordItem {
 
-    private final Tier holyCrossItem;
 
 
     public HolyCrossItem(Tier p_43269_, int p_43270_, float p_43271_, Properties p_43272_) {
         super(p_43269_, p_43270_, p_43271_, p_43272_);
-        this.holyCrossItem = p_43269_;
     }
 
-public Tier getHolyCrossItem(){return this.holyCrossItem;}
 
 
 

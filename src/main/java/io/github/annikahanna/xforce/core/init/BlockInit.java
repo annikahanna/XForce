@@ -113,31 +113,31 @@ public class BlockInit {
 
     public static final RegistryObject<Block> ROSEQUARZ_BLOCK = register("rosequarz_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-            .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+            .strength(6f)), new Item.Properties().tab(XForce.TAB));
 
     public static final RegistryObject<Block> RUBY_BLOCK = register("ruby_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+                    .strength(6f)), new Item.Properties().tab(XForce.TAB));
 
     public static final RegistryObject<Block> CITRIN_BLOCK = register("citrin_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+                    .strength(6f)), new Item.Properties().tab(XForce.TAB));
 
     public static final RegistryObject<Block> TURMALIN_BLOCK = register("turmalin_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+                    .strength(6f)), new Item.Properties().tab(XForce.TAB));
 
     public static final RegistryObject<Block> FLUORITE_BLOCK = register("fluorite_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+                    .strength(6f)), new Item.Properties().tab(XForce.TAB));
 
     public static final RegistryObject<Block> MALACHITE_BLOCK = register("malachite_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+                    .strength(6f)), new Item.Properties().tab(XForce.TAB));
 
     public static final RegistryObject<Block> AMBER_BLOCK = register("amber_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(6f).requiresCorrectToolForDrops()), new Item.Properties().tab(XForce.TAB));
+                    .strength(6f)), new Item.Properties().tab(XForce.TAB));
 
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier, Item.Properties properties){

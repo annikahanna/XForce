@@ -71,6 +71,22 @@
       }
     ]
   },
+  "adventure": {
+    "sounds": [
+      {
+        "name": "xforce:adventure",
+        "stream": true
+      }
+    ]
+  },
+  "kohle": {
+    "sounds": [
+      {
+        "name": "xforce:kohle",
+        "stream": true
+      }
+    ]
+  },
   "dj2": {
     "subtitle": "xforce.dj2",
     "sounds": [

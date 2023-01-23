@@ -21,6 +21,7 @@
 
   "item.xforce.salami": "Salami",
   "item.xforce.holy_cross": "Heiliges Kreuz",
+  "item.xforce.unholy_cross": "Unheiliges Kreuz",
 
   "item.xforce.copper_helmet": "Kupfer Helm",
   "item.xforce.copper_chestplate": "Kupfer Brustpanzer",
@@ -94,6 +95,10 @@
   "item.xforce.abba_music_disc.desc": "Abba - Mamma Mia",
   "item.xforce.pirate_music_disc": "Pirate Music Disc",
   "item.xforce.pirate_music_disc.desc": "Pirate - Arrr",
+  "item.xforce.adventure_music_disc": "Abenteuer Music Disc",
+  "item.xforce.adventure_music_disc.desc": "Adventure Time!",
+  "item.xforce.kohle_music_disc": "Kohle Song Music Disc",
+  "item.xforce.kohle_music_disc.desc": "Kohle Song - Gronkh",
 
   "entity.minecraft.villager.xforce.beekeeper": "Imker",
   "entity.minecraft.villager.xforce.dog_breeder": "Hundezüchter",

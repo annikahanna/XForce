@@ -75,6 +75,9 @@ public class ItemInit {
     public static final RegistryObject<HolyCrossItem> HOLY_CROSS_ITEM = ITEMS.register("holy_cross",
             () -> new HolyCrossItem(Tiers.HOLY_CROSS, 5,3.5f, props().stacksTo(64)));
 
+    public static final RegistryObject<UnHolyCrossItem> UN_HOLY_CROSS_ITEM = ITEMS.register("unholy_cross",
+            () -> new UnHolyCrossItem(Tiers.HOLY_CROSS, 5,3.5f, props().stacksTo(64)));
+
 //ARMOR
     public static final RegistryObject<ArmorItem> COPPER_HELMET = ITEMS.register("copper_helmet",
         () -> new ArmorItem(ArmorMaterialInit.COPPER, EquipmentSlot.HEAD, props()));
@@ -166,35 +169,42 @@ public class ItemInit {
 //MUSIC DISK
 
     public static final RegistryObject<Item> FANTASY_GIRL_MUSIC_DISC = ITEMS.register("fantasy_girl_music_disc",
-            () -> new RecordItem(4, SoundInit.FANTASY_GIRL,
-                    props().stacksTo(1)));
+            () -> new RecordItem(4, SoundInit.FANTASY_GIRL, props().stacksTo(1),60000));
     public static final RegistryObject<Item> COTTON_EYE_JOE_MUSIC_DISC = ITEMS.register("cotton_eye_joe_music_disc",
             () -> new RecordItem(4, SoundInit.COTTON_EYE_JOE_GIRL,
-                    props().stacksTo(1)));
+                    props().stacksTo(1), 60000));
     public static final RegistryObject<Item> COUNTRY_GIRL_MUSIC_DISC = ITEMS.register("country_girl_music_disc",
             () -> new RecordItem(4, SoundInit.COUNTRY_GIRL,
-                    props().stacksTo(1)));
+                    props().stacksTo(1), 60000));
     public static final RegistryObject<Item> RICK_ROLL_MUSIC_DISC = ITEMS.register("rick_roll_music_disc",
             () -> new RecordItem(4, SoundInit.RICK_ROLL,
-                    props().stacksTo(1)));
+                    props().stacksTo(1), 60000));
     public static final RegistryObject<Item> SHANIA_TWAIN_MUSIC_DISC = ITEMS.register("shania_twain_music_disc",
             () -> new RecordItem(4, SoundInit.SHANIA_TWAIN,
-                    props().stacksTo(1)));
+                    props().stacksTo(1), 60000));
     public static final RegistryObject<Item> STRANGER_THINGS_MUSIC_DISC = ITEMS.register("stranger_things_music_disc",
             () -> new RecordItem(4, SoundInit.STRANGER_THINGS,
-                    props().stacksTo(1)));
+                    props().stacksTo(1), 60000));
 
     public static final RegistryObject<Item> GOOD_BOY_MUSIC_DISC = ITEMS.register("good_boy_music_disc",
             () -> new RecordItem(4, SoundInit.GOOD_BOY,
-                    props().stacksTo(1)));
+                    props().stacksTo(1), 60000));
 
     public static final RegistryObject<Item> ABBA_MUSIC_DISC = ITEMS.register("abba_music_disc",
             () -> new RecordItem(4, SoundInit.ABBA,
-                    props().stacksTo(1)));
+                    props().stacksTo(1), 60000));
 
     public static final RegistryObject<Item> PIRATE_MUSIC_DISC = ITEMS.register("pirate_music_disc",
             () -> new RecordItem(4, SoundInit.PIRATE,
-                    props().stacksTo(1)));
+            props().stacksTo(1), 60000));
+
+    public static final RegistryObject<Item> ADVENTURE_MUSIC_DISC = ITEMS.register("adventure_music_disc",
+            () -> new RecordItem(4, SoundInit.ADVENTURE,
+                    props().stacksTo(1), 60000));
+
+    public static final RegistryObject<Item> KOHLE_MUSIC_DISC = ITEMS.register("kohle_music_disc",
+            () -> new RecordItem(4, SoundInit.KOHLE,
+                    props().stacksTo(1), 60000));
 
     //CUSTOM
 

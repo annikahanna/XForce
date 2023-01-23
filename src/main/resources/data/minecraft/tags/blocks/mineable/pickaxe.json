@@ -6,6 +6,12 @@
     "xforce:citrin_ore",
     "xforce:malachite_ore",
     "xforce:turmalin_ore",
-    "xforce:fluorite_ore"
+    "xforce:fluorite_ore",
+    "xforce:rosequarz_block",
+    "xforce:ruby_block",
+    "xforce:citrin_block",
+    "xforce:malachite_block",
+    "xforce:turmalin_block",
+    "xforce:fluorite_block"
   ]
 }
