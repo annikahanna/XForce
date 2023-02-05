@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:green_dye"
+    },
+    "X": {
+      "item": "xforce:pastel_particle"
+    }
+  },
+  "result": {
+    "item": "xforce:mint",
+    "count": 1
+  }
+}

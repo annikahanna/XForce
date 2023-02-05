@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "xforce:block/candy_dirt"
+      },
+      {
+        "model": "xforce:block/candy_dirt",
+        "y": 90
+      },
+      {
+        "model": "xforce:block/candy_dirt",
+        "y": 180
+      },
+      {
+        "model": "xforce:block/candy_dirt",
+        "y": 270
+      }
+    ]
+  }
+}

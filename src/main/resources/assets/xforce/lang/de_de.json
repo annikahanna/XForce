@@ -100,6 +100,7 @@
   "item.xforce.kohle_music_disc": "Kohle Song Music Disc",
   "item.xforce.kohle_music_disc.desc": "Kohle Song - Gronkh",
 
+
   "entity.minecraft.villager.xforce.beekeeper": "Imker",
   "entity.minecraft.villager.xforce.dog_breeder": "Hundezüchter",
   "entity.minecraft.villager.xforce.dj": "DJ",
@@ -142,5 +143,16 @@
   "block.xforce.citrin_block": "Citrin Block",
   "block.xforce.fluorite_block": "Fluorite Block",
   "block.xforce.malachite_block": "Malachite Block",
-  "block.xforce.amber_block": "Bernstein Block"
+  "block.xforce.amber_block": "Bernstein Block",
+
+  "item.xforce.pastel_particle": "Pastell Partikel",
+  "item.xforce.mint": "Mint Farbe",
+  "item.xforce.rose": "Rose Farbe",
+  "item.xforce.apricot": "Apricot Farbe",
+  "item.xforce.citrus": "Citrus Farbe",
+  "item.xforce.babyblue": "Babyblau Farbe",
+  "item.xforce.lavender": "Lavender Farbe",
+
+  "block.xforce.candy_dirt": "Süßigkeiten Erde",
+  "block.xforce.cotton_candy_grass": "Zuckerwatten Grass"
 }

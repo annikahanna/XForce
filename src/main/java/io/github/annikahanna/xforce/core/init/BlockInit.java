@@ -139,6 +139,14 @@ public class BlockInit {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f)), new Item.Properties().tab(XForce.TAB));
 
+    public static final RegistryObject<Block> CANDY_DIRT = register("candy_dirt",
+            () -> new Block(BlockBehaviour.Properties.of(Material.DIRT)
+                    .strength(1f)), new Item.Properties().tab(XForce.TAB));
+
+    public static final RegistryObject<Block> COTTON_CANDY_GRASS = register("cotton_candy_grass",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE)
+                    .strength(1f)), new Item.Properties().tab(XForce.TAB));
+
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier, Item.Properties properties){
         RegistryObject<T> block = BLOCKS.register(name, supplier);

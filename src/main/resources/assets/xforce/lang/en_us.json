@@ -143,5 +143,16 @@
   "block.xforce.citrin_block": "Citrin Block",
   "block.xforce.fluorite_block": "Fluorite Block",
   "block.xforce.malachite_block": "Malachite Block",
-  "block.xforce.amber_block": "Amber Block"
+  "block.xforce.amber_block": "Amber Block",
+
+  "item.xforce.pastel_particle": "Pastel Particle",
+  "item.xforce.mint": "Mint Colour",
+  "item.xforce.rose": "Rose Colour",
+  "item.xforce.apricot": "Apricot Colour",
+  "item.xforce.citrus": "Citrus Colour",
+  "item.xforce.babyblue": "Babyblue Colour",
+  "item.xforce.lavender": "Lavender Colour",
+
+  "block.xforce.candy_dirt": "Candy Dirt",
+  "block.xforce.cotton_candy_grass": "Cotton Candy Grass"
 }

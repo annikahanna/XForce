@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "xforce:blocks/candy_dirt",
+    "particle": "xforce:blocks/candy_dirt",
+    "side": "xforce:blocks/cotton_candy_grass_side",
+    "top": "xforce:blocks/cotton_candy_grass_top"
+  }
+}

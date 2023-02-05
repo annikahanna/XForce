@@ -43,6 +43,11 @@ public class ItemInit {
     public static final RegistryObject<Item> JAM_BREAD = ITEMS.register("jam_bread", () -> new Item(
             props().food(Foods.JAM_BREAD)));
 
+    public static final RegistryObject<Item> COTTON_CANDY = ITEMS.register("cotton_candy", () -> new Item(
+            props().food(Foods.COTTON_CANDY)));
+
+
+
     //Drugs
 
     public static final RegistryObject<PuffPuffItem> PUFF_PUFF = ITEMS.register("puff_puff",
@@ -262,6 +267,24 @@ public class ItemInit {
     public static final RegistryObject<Item> AMBER = ITEMS.register("amber",
             () -> new Item(props()));
 
+
+    //Colours
+    public static final RegistryObject<Item> PASTEL_PARTICLE = ITEMS.register("pastel_particle",
+            () -> new Item(props()));
+    public static final RegistryObject<Item> MINT = ITEMS.register("mint",
+            () -> new Item(props()));
+    public static final RegistryObject<Item> ROSE = ITEMS.register("rose",
+            () -> new Item(props()));
+    public static final RegistryObject<Item> APRICOT = ITEMS.register("apricot",
+            () -> new Item(props()));
+    public static final RegistryObject<Item> BABYBLUE = ITEMS.register("babyblue",
+            () -> new Item(props()));
+    public static final RegistryObject<Item> LAVENDER = ITEMS.register("lavender",
+            () -> new Item(props()));
+    public static final RegistryObject<Item> CITRUS = ITEMS.register("citrus",
+            () -> new Item(props()));
+
+
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);
    }
@@ -307,6 +330,11 @@ public class ItemInit {
         public static final FoodProperties JAM_BREAD =
                 new FoodProperties.Builder()
                         .nutrition(9)
+                        .build();
+
+        public static final FoodProperties COTTON_CANDY =
+                new FoodProperties.Builder()
+                        .nutrition(4)
                         .build();
 
         public static final FoodProperties SALAMI =

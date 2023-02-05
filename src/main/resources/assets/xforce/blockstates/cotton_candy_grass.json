@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "xforce:block/cotton_candy_grass"
+      },
+      {
+        "model": "xforce:block/cotton_candy_grass",
+        "y": 90
+      },
+      {
+        "model": "xforce:block/cotton_candy_grass",
+        "y": 180
+      },
+      {
+        "model": "xforce:block/cotton_candy_grass",
+        "y": 270
+      }
+    ]
+  }
+}
