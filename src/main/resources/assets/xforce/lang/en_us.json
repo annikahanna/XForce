@@ -154,5 +154,7 @@
   "item.xforce.lavender": "Lavender Colour",
 
   "block.xforce.candy_dirt": "Candy Dirt",
-  "block.xforce.cotton_candy_grass": "Cotton Candy Grass"
+  "block.xforce.cotton_candy_grass": "Cotton Candy Grass",
+
+  "biome.xforce.candy": "Candy Land"
 }

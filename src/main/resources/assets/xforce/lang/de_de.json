@@ -154,5 +154,7 @@
   "item.xforce.lavender": "Lavender Farbe",
 
   "block.xforce.candy_dirt": "Süßigkeiten Erde",
-  "block.xforce.cotton_candy_grass": "Zuckerwatten Grass"
+  "block.xforce.cotton_candy_grass": "Zuckerwatten Grass",
+
+  "biome.xforce.candy": "Candy Land"
 }

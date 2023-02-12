@@ -1,22 +1,24 @@
 package io.github.annikahanna.xforce;
 
 import io.github.annikahanna.xforce.core.init.*;
+import io.github.annikahanna.xforce.core.world.biome.ModBiomes;
+import io.github.annikahanna.xforce.core.world.biome.ModRegions;
+import io.github.annikahanna.xforce.core.world.biome.ModSurfaceRuleData;
+import io.github.annikahanna.xforce.core.world.dimension.ModDimensions;
 import io.github.annikahanna.xforce.core.world.feature.ModConfiguredFeatures;
 import io.github.annikahanna.xforce.core.world.feature.ModPlacedFeatures;
 import io.github.annikahanna.xforce.core.world.structure.ModStructures;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.javafmlmod.FMLModContainer;
 import org.antlr.v4.runtime.misc.NotNull;
+import terrablender.api.Regions;
+import terrablender.api.SurfaceRuleManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +43,8 @@ public class XForce {
         ModStructures.register(bus);
         ModConfiguredFeatures.register(bus);
         ModPlacedFeatures.register(bus);
+        ModDimensions.register();
+        ModBiomes.registerBiomes();
     }
 
     public static SoundEvent RANDOM_DJ(){
@@ -91,6 +95,15 @@ public class XForce {
     private void commonSetup(final FMLCommonSetupEvent event){
         event.enqueueWork(() -> {
             VillagerInit.registerPOIs();
+        });
+
+        event.enqueueWork(() ->
+        {
+            // Given we only add two biomes, we should keep our weight relatively low.
+            Regions.register(new ModRegions(new ResourceLocation(MODID, "overworld"), 1));
+
+            // Register our surface rules
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MODID, ModSurfaceRuleData.makeRules());
         });
     }
 
