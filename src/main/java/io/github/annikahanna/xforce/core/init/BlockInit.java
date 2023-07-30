@@ -1,7 +1,8 @@
 package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
-import io.github.annikahanna.xforce.common.custom.*;
+import io.github.annikahanna.xforce.common.custom.block.*;
+import io.github.annikahanna.xforce.core.init.fluid.ModFluids;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
@@ -139,13 +140,55 @@ public class BlockInit {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f)), new Item.Properties().tab(XForce.TAB));
 
+    //CANDY LAND
+
     public static final RegistryObject<Block> CANDY_DIRT = register("candy_dirt",
             () -> new Block(BlockBehaviour.Properties.of(Material.DIRT)
-                    .strength(1f)), new Item.Properties().tab(XForce.TAB));
+                    .strength(1f)), new Item.Properties().tab(XForce.CANDY_TAB));
 
     public static final RegistryObject<Block> COTTON_CANDY_GRASS = register("cotton_candy_grass",
             () -> new Block(BlockBehaviour.Properties.of(Material.CAKE)
-                    .strength(1f)), new Item.Properties().tab(XForce.TAB));
+                    .strength(1f)), new Item.Properties().tab(XForce.CANDY_TAB));
+
+    public static final RegistryObject<Block> COTTON_CANDY_BLOCK = register("cotton_candy_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE)
+                    .strength(1f)), new Item.Properties().tab(XForce.CANDY_TAB));
+
+    public static final RegistryObject<Block> COTTON_CANDY_BLOCK_ROSE = register("cotton_candy_block_rose",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE)
+                    .strength(1f)), new Item.Properties().tab(XForce.CANDY_TAB));
+
+    public static final RegistryObject<Block> COTTON_CANDY_BLOCK_BABYBLUE = register("cotton_candy_block_babyblue",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE)
+                    .strength(1f)), new Item.Properties().tab(XForce.CANDY_TAB));
+
+    public static final RegistryObject<Block> COTTON_CANDY_BLOCK_APRICOT = register("cotton_candy_block_apricot",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE)
+                    .strength(1f)), new Item.Properties().tab(XForce.CANDY_TAB));
+
+    public static final RegistryObject<Block> COTTON_CANDY_BLOCK_MINT = register("cotton_candy_block_mint",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE)
+                    .strength(1f)), new Item.Properties().tab(XForce.CANDY_TAB));
+
+    public static final RegistryObject<Block> COTTON_CANDY_BLOCK_CITRUS = register("cotton_candy_block_citrus",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE)
+                    .strength(1f)), new Item.Properties().tab(XForce.CANDY_TAB));
+
+    public static final RegistryObject<Block> COTTON_CANDY_BLOCK_LAVENDER = register("cotton_candy_block_lavender",
+            () -> new Block(BlockBehaviour.Properties.of(Material.CAKE)
+                    .strength(1f)), new Item.Properties().tab(XForce.CANDY_TAB));
+
+    public static final RegistryObject<Block> CANDY_PORTAL = BLOCKS.register("candy_portal", CandyPortalBlock::new);
+
+
+    //FLUIDS
+
+    public static final RegistryObject<LiquidBlock> LEMONADE_BLOCK = BLOCKS.register("lemonade_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_LEMONADE, BlockBehaviour.Properties.copy(Blocks.WATER)));
+
+    public static final RegistryObject<LiquidBlock> KAKAO_BLOCK = BLOCKS.register("kakao_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_KAKAO, BlockBehaviour.Properties.copy(Blocks.WATER)));
+
 
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier, Item.Properties properties){

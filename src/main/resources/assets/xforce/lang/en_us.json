@@ -153,8 +153,27 @@
   "item.xforce.babyblue": "Babyblue Colour",
   "item.xforce.lavender": "Lavender Colour",
 
+  "item.xforce.cotton_candy": "Cotton Candy",
+  "item.xforce.cotton_candy_mint": "Cotton Candy Mint",
+  "item.xforce.cotton_candy_rose": "Cotton Candy Rose",
+  "item.xforce.cotton_candy_apricot": "Cotton Candy Apricot",
+  "item.xforce.cotton_candy_citrus": "Cotton Candy Citrus",
+  "item.xforce.cotton_candy_babyblue": "Cotton Candy Babyblue",
+  "item.xforce.cotton_candy_lavender": "Cotton Candy Lavender",
+
   "block.xforce.candy_dirt": "Candy Dirt",
   "block.xforce.cotton_candy_grass": "Cotton Candy Grass",
+  "block.xforce.cotton_candy_block": "Cotton Candy Block",
+  "block.xforce.cotton_candy_block_rose": "Cotton Candy Block Rose",
+  "block.xforce.cotton_candy_block_mint": "Cotton Candy Block Mint",
+  "block.xforce.cotton_candy_block_apricot": "Cotton Candy Block Apricot",
+  "block.xforce.cotton_candy_block_citrus": "Cotton Candy Block Citrus",
+  "block.xforce.cotton_candy_block_lavender": "Cotton Candy Block Lavender",
+  "block.xforce.cotton_candy_block_babyblue": "Cotton Candy Block Babyblue",
+  "block.xforce.candy_portal": "Candy Portal",
+
+  "item.xforce.lemonade_bucket": "Lemonade Bucket",
+  "item.xforce.kakao_bucket": "Kakao Bucket",
 
   "biome.xforce.candy": "Candy Land"
 }

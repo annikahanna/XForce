@@ -1,6 +1,8 @@
 package io.github.annikahanna.xforce;
 
 import io.github.annikahanna.xforce.core.init.*;
+import io.github.annikahanna.xforce.core.init.fluid.ModFluidTypes;
+import io.github.annikahanna.xforce.core.init.fluid.ModFluids;
 import io.github.annikahanna.xforce.core.world.biome.ModBiomes;
 import io.github.annikahanna.xforce.core.world.biome.ModRegions;
 import io.github.annikahanna.xforce.core.world.biome.ModSurfaceRuleData;
@@ -8,12 +10,16 @@ import io.github.annikahanna.xforce.core.world.dimension.ModDimensions;
 import io.github.annikahanna.xforce.core.world.feature.ModConfiguredFeatures;
 import io.github.annikahanna.xforce.core.world.feature.ModPlacedFeatures;
 import io.github.annikahanna.xforce.core.world.structure.ModStructures;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.antlr.v4.runtime.misc.NotNull;
@@ -39,12 +45,14 @@ public class XForce {
         BlockInit.BLOCKS.register(bus);
         EntityInit.ENTITIES.register(bus);
         SoundInit.SOUND_EVENTS.register(bus);
-        VillagerInit.register(bus);
+        ModPointOfInterest.register(bus);
         ModStructures.register(bus);
         ModConfiguredFeatures.register(bus);
         ModPlacedFeatures.register(bus);
         ModDimensions.register();
         ModBiomes.registerBiomes();
+        ModFluids.register(bus);
+        ModFluidTypes.register(bus);
     }
 
     public static SoundEvent RANDOM_DJ(){
@@ -94,7 +102,7 @@ public class XForce {
 
     private void commonSetup(final FMLCommonSetupEvent event){
         event.enqueueWork(() -> {
-            VillagerInit.registerPOIs();
+            ModPointOfInterest.registerPOIs();
         });
 
         event.enqueueWork(() ->
@@ -115,5 +123,23 @@ public class XForce {
 
 
     };
+
+    public static final CreativeModeTab CANDY_TAB = new CreativeModeTab(MODID ) {
+        @Override
+        public @NotNull ItemStack makeIcon() {
+            return ItemInit.COTTON_CANDY.get().getDefaultInstance();
+        }
+
+
+    };
+
+    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+    public static class ClientModEvents {
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_LEMONADE.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_LEMONADE.get(), RenderType.translucent());
+        }
+    }
 
 }

@@ -153,8 +153,27 @@
   "item.xforce.babyblue": "Babyblau Farbe",
   "item.xforce.lavender": "Lavender Farbe",
 
+  "item.xforce.cotton_candy": "Zuckerwatte",
+  "item.xforce.cotton_candy_mint": "Zuckerwatte Mint",
+  "item.xforce.cotton_candy_rose": "Zuckerwatte Rose",
+  "item.xforce.cotton_candy_apricot": "Zuckerwatte Apricot",
+  "item.xforce.cotton_candy_citrus": "Zuckerwatte Citrus",
+  "item.xforce.cotton_candy_babyblue": "Zuckerwatte Babyblau",
+  "item.xforce.cotton_candy_lavender": "Zuckerwatte Lavender",
+
   "block.xforce.candy_dirt": "Süßigkeiten Erde",
   "block.xforce.cotton_candy_grass": "Zuckerwatten Grass",
+  "block.xforce.cotton_candy_block": "Zuckerwatten Block",
+  "block.xforce.cotton_candy_block_rose": "Zuckerwatten Block Rose",
+  "block.xforce.cotton_candy_block_mint": "Zuckerwatten Block Mint",
+  "block.xforce.cotton_candy_block_apricot": "Zuckerwatten Block Apricot",
+  "block.xforce.cotton_candy_block_citrus": "Zuckerwatten Block Citrus",
+  "block.xforce.cotton_candy_block_lavender": "Zuckerwatten Block Lavender",
+  "block.xforce.cotton_candy_block_babyblue": "Zuckerwatten Block Babyblau",
+  "block.xforce.candy_portal": "Süßigkeiten Portal",
+
+  "item.xforce.lemonade_bucket": "Limonaden Eimer",
+  "item.xforce.kakao_bucket": "Kakao Eimer",
 
   "biome.xforce.candy": "Candy Land"
 }

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "xforce:cotton_candy"
+    },
+    {
+      "item": "xforce:rose"
+    }
+  ],
+  "result": {
+    "item": "xforce:cotton_candy_rose",
+    "count": 1
+  }
+}

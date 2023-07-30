@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "axis=z": {"model":  "xforce:block/candy_portal_ew"},
+    "axis=x": {"model":  "xforce:block/candy_portal_ns"}
+  }
+}

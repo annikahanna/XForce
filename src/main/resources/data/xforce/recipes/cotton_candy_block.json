@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "xforce:cotton_candy"
+    }
+  },
+  "result": {
+    "item": "xforce:cotton_candy_block",
+    "count": 1
+  }
+}

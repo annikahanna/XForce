@@ -3,7 +3,7 @@ package io.github.annikahanna.xforce.core.event;
 import io.github.annikahanna.xforce.XForce;
 import io.github.annikahanna.xforce.core.init.BlockInit;
 import io.github.annikahanna.xforce.core.init.ItemInit;
-import io.github.annikahanna.xforce.core.init.VillagerInit;
+import io.github.annikahanna.xforce.core.init.ModPointOfInterest;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
@@ -22,7 +22,7 @@ public class VillagerEvent {
     public static void addCustomTrades(VillagerTradesEvent event){
 
 
-        if(event.getType() == VillagerInit.BEEKEEPER.get()) {
+        if(event.getType() == ModPointOfInterest.BEEKEEPER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 1);
             int villagerLevel = 1;
@@ -32,7 +32,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.BEEKEEPER.get()) {
+        if(event.getType() == ModPointOfInterest.BEEKEEPER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 1);
             int villagerLevel = 1;
@@ -42,7 +42,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.BEEKEEPER.get()) {
+        if(event.getType() == ModPointOfInterest.BEEKEEPER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.HONEY_BOTTLE, 1);
             int villagerLevel = 2;
@@ -52,7 +52,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.BEEKEEPER.get()) {
+        if(event.getType() == ModPointOfInterest.BEEKEEPER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.BEE_SPAWN_EGG, 1);
             int villagerLevel = 3;
@@ -62,7 +62,7 @@ public class VillagerEvent {
                     stack,10,8,0.02F));
         }
 
-        if(event.getType() == VillagerInit.BEEKEEPER.get()) {
+        if(event.getType() == ModPointOfInterest.BEEKEEPER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.CANDLE, 4);
             int villagerLevel = 3;
@@ -72,7 +72,7 @@ public class VillagerEvent {
                     stack,10,8,0.02F));
         }
 
-        if(event.getType() == VillagerInit.BEEKEEPER.get()) {
+        if(event.getType() == ModPointOfInterest.BEEKEEPER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 1);
             int villagerLevel = 2;
@@ -82,7 +82,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DOG_BREEDER.get()) {
+        if(event.getType() == ModPointOfInterest.DOG_BREEDER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 1);
             int villagerLevel = 1;
@@ -92,7 +92,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DOG_BREEDER.get()) {
+        if(event.getType() == ModPointOfInterest.DOG_BREEDER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.DOGTREAT.get(), 3);
             int villagerLevel = 1;
@@ -102,7 +102,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DOG_BREEDER.get()) {
+        if(event.getType() == ModPointOfInterest.DOG_BREEDER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.PIXEL_SPWAN_EGG.get(), 1);
             int villagerLevel = 2;
@@ -112,7 +112,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DOG_BREEDER.get()) {
+        if(event.getType() == ModPointOfInterest.DOG_BREEDER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.NAME_TAG, 1);
             int villagerLevel = 2;
@@ -122,7 +122,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DOG_BREEDER.get()) {
+        if(event.getType() == ModPointOfInterest.DOG_BREEDER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.CORGI_SPWAN_EGG.get(), 1);
             int villagerLevel = 2;
@@ -132,7 +132,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DOG_BREEDER.get()) {
+        if(event.getType() == ModPointOfInterest.DOG_BREEDER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.NAME_TAG, 1);
             int villagerLevel = 3;
@@ -142,7 +142,7 @@ public class VillagerEvent {
                     stack,10,8,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DOG_BREEDER.get()) {
+        if(event.getType() == ModPointOfInterest.DOG_BREEDER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.LEAD, 1);
             int villagerLevel = 3;
@@ -152,7 +152,7 @@ public class VillagerEvent {
                     stack,10,8,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 1);
             int villagerLevel = 1;
@@ -162,7 +162,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.PIRATE_MUSIC_DISC.get(), 1);
             int villagerLevel = 1;
@@ -172,7 +172,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.FANTASY_GIRL_MUSIC_DISC.get(), 1);
             int villagerLevel = 1;
@@ -182,7 +182,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.SHANIA_TWAIN_MUSIC_DISC.get(), 1);
             int villagerLevel = 2;
@@ -192,7 +192,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.GOOD_BOY_MUSIC_DISC.get(), 1);
             int villagerLevel = 2;
@@ -202,7 +202,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.COUNTRY_GIRL_MUSIC_DISC.get(), 1);
             int villagerLevel = 2;
@@ -212,7 +212,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.COTTON_EYE_JOE_MUSIC_DISC.get(), 1);
             int villagerLevel = 3;
@@ -222,7 +222,7 @@ public class VillagerEvent {
                     stack,10,8,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.STRANGER_THINGS_MUSIC_DISC.get(), 1);
             int villagerLevel = 3;
@@ -232,7 +232,7 @@ public class VillagerEvent {
                     stack,10,8,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.RICK_ROLL_MUSIC_DISC.get(), 1);
             int villagerLevel = 4;
@@ -242,7 +242,7 @@ public class VillagerEvent {
                     stack,10,10,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.ABBA_MUSIC_DISC.get(), 1);
             int villagerLevel = 4;
@@ -252,7 +252,7 @@ public class VillagerEvent {
                     stack,10,10,0.02F));
         }
 
-        if(event.getType() == VillagerInit.DJ.get()) {
+        if(event.getType() == ModPointOfInterest.DJ.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.PUFF_PUFF.get(), 1);
             int villagerLevel = 4;
@@ -262,7 +262,7 @@ public class VillagerEvent {
                     stack,10,10,0.02F));
         }
 
-        if(event.getType() == VillagerInit.HOST.get()) {
+        if(event.getType() == ModPointOfInterest.HOST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.BEER.get(), 1);
             int villagerLevel = 1;
@@ -272,7 +272,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.HOST.get()) {
+        if(event.getType() == ModPointOfInterest.HOST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 1);
             int villagerLevel = 1;
@@ -282,7 +282,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.HOST.get()) {
+        if(event.getType() == ModPointOfInterest.HOST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 1);
             int villagerLevel = 2;
@@ -292,7 +292,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.HOST.get()) {
+        if(event.getType() == ModPointOfInterest.HOST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.COCKTAIL.get(), 1);
             int villagerLevel = 2;
@@ -302,7 +302,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.HOST.get()) {
+        if(event.getType() == ModPointOfInterest.HOST.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.ALKOHOL.get(), 1);
             int villagerLevel = 3;
@@ -312,7 +312,7 @@ public class VillagerEvent {
                     stack,10,8,0.02F));
         }
 
-        if(event.getType() == VillagerInit.GARDENER.get()) {
+        if(event.getType() == ModPointOfInterest.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(BlockInit.PANSY_BLUE.get(), 1);
             int villagerLevel = 1;
@@ -321,7 +321,7 @@ public class VillagerEvent {
                     new ItemStack(Items.EMERALD, 1),
                     stack,10,2,0.02F));
         }
-        if(event.getType() == VillagerInit.GARDENER.get()) {
+        if(event.getType() == ModPointOfInterest.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(BlockInit.PANSY_RED.get(), 1);
             int villagerLevel = 1;
@@ -330,7 +330,7 @@ public class VillagerEvent {
                     new ItemStack(Items.EMERALD, 1),
                     stack,10,2,0.02F));
         }
-        if(event.getType() == VillagerInit.GARDENER.get()) {
+        if(event.getType() == ModPointOfInterest.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.LAVENDEL_SEEDS.get(), 1);
             int villagerLevel = 1;
@@ -340,7 +340,7 @@ public class VillagerEvent {
                     stack,10,2,0.02F));
         }
 
-        if(event.getType() == VillagerInit.GARDENER.get()) {
+        if(event.getType() == ModPointOfInterest.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.BLUEBERRY_SEEDS.get(), 1);
             int villagerLevel = 2;
@@ -350,7 +350,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.GARDENER.get()) {
+        if(event.getType() == ModPointOfInterest.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.PUFF_PUFF_SEEDS.get(), 1);
             int villagerLevel = 2;
@@ -360,7 +360,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.GARDENER.get()) {
+        if(event.getType() == ModPointOfInterest.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(BlockInit.HERB.get(), 1);
             int villagerLevel = 2;
@@ -370,7 +370,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.GARDENER.get()) {
+        if(event.getType() == ModPointOfInterest.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 1);
             int villagerLevel = 2;
@@ -380,7 +380,7 @@ public class VillagerEvent {
                     stack,10,5,0.02F));
         }
 
-        if(event.getType() == VillagerInit.GARDENER.get()) {
+        if(event.getType() == ModPointOfInterest.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.BLACKBERRY_SEEDS.get(), 1);
             int villagerLevel = 3;
@@ -390,7 +390,7 @@ public class VillagerEvent {
                     stack,10,8,0.02F));
         }
 
-        if(event.getType() == VillagerInit.GARDENER.get()) {
+        if(event.getType() == ModPointOfInterest.GARDENER.get()) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
             ItemStack stack = new ItemStack(ItemInit.RASPBERRY_SEEDS.get(), 1);
             int villagerLevel = 3;

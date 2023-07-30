@@ -1,8 +1,9 @@
 package io.github.annikahanna.xforce.core.init;
 
 import io.github.annikahanna.xforce.XForce;
-import io.github.annikahanna.xforce.common.custom.*;
+import io.github.annikahanna.xforce.common.custom.item.*;
 import io.github.annikahanna.xforce.core.init.armorEffects.*;
+import io.github.annikahanna.xforce.core.init.fluid.ModFluids;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -38,13 +39,38 @@ public class ItemInit {
             () -> new PuffPuffKrautItem(props()));
 
     public static final RegistryObject<Item> JAM = ITEMS.register("jam", () -> new Item(
-            props().food(Foods.JAM)));
+            props().food(Foods.JAM).craftRemainder(Items.GLASS_BOTTLE)));
 
     public static final RegistryObject<Item> JAM_BREAD = ITEMS.register("jam_bread", () -> new Item(
             props().food(Foods.JAM_BREAD)));
 
-    public static final RegistryObject<Item> COTTON_CANDY = ITEMS.register("cotton_candy", () -> new Item(
-            props().food(Foods.COTTON_CANDY)));
+    public static final RegistryObject<CatalystItem> COTTON_CANDY = ITEMS.register("cotton_candy", CatalystItem::new);
+    public static final RegistryObject<Item> COTTON_CANDY_ROSE = ITEMS.register("cotton_candy_rose", () -> new Item(
+            candy_props().food(Foods.COTTON_CANDY)));
+    public static final RegistryObject<Item> COTTON_CANDY_MINT = ITEMS.register("cotton_candy_mint", () -> new Item(
+            candy_props().food(Foods.COTTON_CANDY)));
+    public static final RegistryObject<Item> COTTON_CANDY_APRICOT = ITEMS.register("cotton_candy_apricot", () -> new Item(
+            candy_props().food(Foods.COTTON_CANDY)));
+    public static final RegistryObject<Item> COTTON_CANDY_BABYBLUE = ITEMS.register("cotton_candy_babyblue", () -> new Item(
+            candy_props().food(Foods.COTTON_CANDY)));
+    public static final RegistryObject<Item> COTTON_CANDY_CITRUS = ITEMS.register("cotton_candy_citrus", () -> new Item(
+            candy_props().food(Foods.COTTON_CANDY)));
+    public static final RegistryObject<Item> COTTON_CANDY_LAVENDER = ITEMS.register("cotton_candy_lavender", () -> new Item(
+            candy_props().food(Foods.COTTON_CANDY)));
+
+    //FLUIDS
+
+    public static final RegistryObject<Item> LEMONADE_BUCKET = ITEMS.register("lemonade_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_LEMONADE, candy_props()
+                    .food(Foods.FLUID)
+                    .stacksTo(1)
+                    .craftRemainder(Items.BUCKET)));
+
+    public static final RegistryObject<Item> KAKAO_BUCKET = ITEMS.register("kakao_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_KAKAO, candy_props()
+                    .food(Foods.FLUID)
+                    .stacksTo(1)
+                    .craftRemainder(Items.BUCKET)));
 
 
 
@@ -270,24 +296,27 @@ public class ItemInit {
 
     //Colours
     public static final RegistryObject<Item> PASTEL_PARTICLE = ITEMS.register("pastel_particle",
-            () -> new Item(props()));
+            () -> new Item(candy_props()));
     public static final RegistryObject<Item> MINT = ITEMS.register("mint",
-            () -> new Item(props()));
+            () -> new Item(candy_props()));
     public static final RegistryObject<Item> ROSE = ITEMS.register("rose",
-            () -> new Item(props()));
+            () -> new Item(candy_props()));
     public static final RegistryObject<Item> APRICOT = ITEMS.register("apricot",
-            () -> new Item(props()));
+            () -> new Item(candy_props()));
     public static final RegistryObject<Item> BABYBLUE = ITEMS.register("babyblue",
-            () -> new Item(props()));
+            () -> new Item(candy_props()));
     public static final RegistryObject<Item> LAVENDER = ITEMS.register("lavender",
-            () -> new Item(props()));
+            () -> new Item(candy_props()));
     public static final RegistryObject<Item> CITRUS = ITEMS.register("citrus",
-            () -> new Item(props()));
+            () -> new Item(candy_props()));
 
 
    private static Item.Properties props(){
        return new Item.Properties().tab(XForce.TAB);
    }
+    private static Item.Properties candy_props(){
+        return new Item.Properties().tab(XForce.CANDY_TAB);
+    }
 
     public static class Foods{
         public static final FoodProperties DOGTREAT =
@@ -340,6 +369,12 @@ public class ItemInit {
         public static final FoodProperties SALAMI =
                 new FoodProperties.Builder()
                         .nutrition(6)
+                        .alwaysEat()
+                        .build();
+
+        public static final FoodProperties FLUID =
+                new FoodProperties.Builder()
+                        .nutrition(2)
                         .alwaysEat()
                         .build();
    }
